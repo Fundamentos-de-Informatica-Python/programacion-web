@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 02 - HTML (Cont)</title>
+</head>
+<body>
+
+    <!-- Unidad 03: Diapositivas 14 a 20 -->
+    
+    <h1>Bienvenida al Segundo Ejemplo</h1>
+
+    <a name="ejemplo01"></a>
+    <ul>
+        <li>Especificidad</li>
+        <li>Formas de asignar estilos</li>
+        <li>Textos y Fuentes</li>
+        <li>Contenedores. Bordes y Overflow</li>
+    </ul>
+    
+
+    <br/ ><hr/>
+    <style>
+        body {
+            color: darkblue;
+        }
+        p {
+            color: red;
+        }
+        #parrafo {
+            color: blue;
+        }
+        .claseparrafo {
+            color: green;
+        }
+    </style>
+    <p id="parrafo" class="claseparrafo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra lorem orci, id fringilla leo eleifend semper. 
+        Vestibulum aliquam augue vel justo pulvinar, sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget.
+    </p>
+
+
+
+    <br/ ><hr/>
+    <style>
+        p {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-decoration: underline;
+            font-style: italic;
+            background-image: url('imagenes/dino_01_argentinosaurus.jpg')  ;
+        }
+
+        li {
+            text-align: center;
+            line-height: 4;
+            letter-spacing: 2px;
+            background-color: yellow;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    </style>
+    <!--
+        Autores Backgroud:
+        https://www.flaticon.es/icono-gratis/fosil_895884
+        https://www.flaticon.es/icono-gratis/tyrannosaurus-rex_1674514
+        Freepik Smashicons
+    -->
+    <p>
+        Sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget. Nullam lectus velit, sagittis vitae commodo vel, blandit vitae lorem. 
+        Praesent vel convallis nulla, ut molestie est. 
+    </p>
+
+    <ul>
+        <li>Mi primer elemento</li>
+        <li>Mi Segundo elemento</li>
+        <li>Mi tercer elemento</li>
+    </ul>
+    
+
+
+
+
+    <br/ ><hr/>
+    <style>
+        .tipo1 {
+            height: 300px;
+            width:  300px;
+            background-image: url(imagenes/flaticon_fosil_01.png);
+            background-repeat: repeat-y;
+            background-position: right;
+            background-color: blue;
+        }
+
+        .tipo2 {
+            height: 300px;
+            width:  300px;
+            background-image: url(imagenes/flaticon_tyrannosaurus-rex.png);
+            background-repeat: repeat-x;
+            background-position: center;
+            background-color: red;
+        }
+    </style>
+    <div class="tipo1"></div>
+    <div class="tipo2"></div>
+    
+
+
+    <hr>
+    Diapo 22
+
+    <style>
+        ul .estilo1 {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+        ul .estilo2 {
+            list-style-type: decimal;
+            list-style-position: outside;           
+        }
+        ul .estilo3 {
+            list-style-type: lower-roman;           
+        }
+        ul .estilo4 {
+            list-style-image: url(https://commons.wikimedia.org/wiki/Star_symbol#/media/File:Star*.svg);           
+        }
+    </style>
+
+    <ul>
+        <li class="estilo1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra lorem orci, id fringilla leo eleifend semper. 
+            Vestibulum aliquam augue </li>
+        <li class="estilo2">placerat eget. Nullam lectus velit, sagittis vitae commodo vel, blandit vitae lorem. 
+            Praesent vel convallis n </li>
+        <li class="estilo3">nec est varius, pretium vehicula ligula porta.
+            Suspendisse ultricies f </li>
+        <li class="estilo4">r sit amet, consectetur adipiscing elit. Nam viverra lorem orci, id fringilla leo eleifend semper. 
+            Vestibulum aliqu </li>
+    </ul>
+
+
+    <!-- Diapo 25 -->
+    <style>
+
+    </style>
+    <div class="conttenedor1">
+        <p>
+            consectetur adipiscing elit. Nam viverra lorem orci, id fringilla leo eleifend semper. 
+        Vestibulum aliquam augue vel justo pulvinar, sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget. Nullam lectus velit, sagittis vitae commodo vel, blandit vitae lorem. 
+        Praesent vel convallis nulla, ut molestie est. 
+        Suspendisse sodales eu enim in
+        </p>
+    </div>
+
+
+    <div class="conttenedor2">
+        <p>
+         Nam viverra lorem orci, id fringilla leo eleifend semper. 
+        Vestibulum aliquam augue vel justo pulvinar, sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget. Nullam lectus velit, sagittis vitae commodo vel, blandit vitae lorem. 
+        Praesent vel convallis nulla, ut molestie est. 
+        Suspendisse sodales eu enim in
+        </p>
+    </div>
+</body>
+</html>

@@ -17,7 +17,7 @@
 </head>
 <body>
     
-    <!-- Unidad 03: Diapositivas 03 a 07 -->
+    <!-- Unidad 03: Diapositivas 03 a 12 -->
 
     <h1>Bienvenido al Primer Ejemplo</h1>
 
@@ -202,12 +202,29 @@
             margin: 10px auto;
             display: block;
             width: 400px;
+            visibility: hidden;
+        }
+        div#video  {
+            margin: 5% auto;
+            display: block;
+            background-color: aqua;
+            text-align: center;           /* Propiedad Hereda */
         }
     </style>
     
-    Mosasaurio Fight! 
+    <div id="video">
+        <h1>Mosasaurio Attack</h1>
+        <h2>to Shocking Felin</h2> 
+        <h3>Livestream Fight! </h3>
+        <p>
+            <small>(raw material)</small>
+        </p>
         <button onclick="show('luna')">On</button> 
         <button onclick="hide('luna')">Off</button>    
+    </div>
+
+
+
     <div>
         <video src="imagenes/Luna vs Mossasaurio.mp4" id="luna" controls></video>
     </div>
