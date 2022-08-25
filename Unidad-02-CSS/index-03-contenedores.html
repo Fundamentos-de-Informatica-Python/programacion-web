@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 02 - HTML (Cont)</title>
+
+    <script src="scripts/utils.js"></script>
+</head>
+<body>
+
+    <!-- Unidad 03: Diapositivas 22 a 30 -->
+    
+    <h1>Bienvenida al Tercer Ejemplo</h1>
+
+    <a name="ejemplo01"></a>
+    <ul>
+        <li>Contenedores. Bordes y Overflow</li>
+    </ul>
+    
+
+
+
+    
+    <br/ ><hr/>
+    <h1>Contenedores</h1>
+    <style>
+        .contenedor1 {
+            margin: 5px;
+            padding: 10px;
+            background-color: yellow;
+            border-color: red;
+            border-style: solid;
+        }
+
+        .contenedor2 {
+            font-size: 10px;
+            margin: 20px;
+            padding: 30px;
+            width: 100px;
+            height: 50px;
+            background-color: aquamarine;
+            border-width: 10px;
+            border-color: blue;
+            border-style: solid;
+            overflow: scroll;
+            /*
+            overflow-y: auto;
+            overflow-x: auto;
+            overflow-y: auto;
+            */
+        }
+    </style>
+    <div class="contenedor1">
+        <p>
+            augue placerat eget. Nullam lectus velit, 
+            sagittis vitae commodo vel, blandit vitae lorem. 
+            Praesent vel convallis nulla, ut molestie est.
+        </p>
+    </div>
+    <div class="contenedor2">
+        <p>
+            em ipsum dolor sit amet,o vel, blandit vitae lorem. 
+            Praesent vel convallis nulla, ut molestie est. eli
+        </p>
+    </div>
+    
+
+
+    <!-- Diapo 26 - Selectores de pseudoclase-->
+    <br/ ><hr/>
+    <h1> Selectores de pseudoclases</h1>
+    <style>
+        nav {
+            height: auto;
+            width: 400px;
+            padding: 20px;
+            background-color: pink;
+        }
+        nav a {
+            padding: 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: aquamarine;
+        }
+    </style>
+    <nav>
+        <a href="">Clientes</a>
+        <a href="">Proveedores</a>
+        <a href="">Opciones</a>
+        <a href="">Mi Perfil</a>
+    </nav>
+
+
+     <!-- Diapo 27 - Selectores de Atributos-->
+     <br/ ><hr/>
+     <h1> Selectores de Atributoss</h1>
+     <style>
+        form {
+            width: 270px;
+            background-color: yellow;
+            padding: 10px;
+        }
+
+        input {
+            margin: 20px;
+        }
+
+        input[tye="text"] {
+            background-color: red;
+            border-radius: 20px;
+        }
+
+        input[type="number"] {
+            background-color: pink;
+            border-radius: 20px;
+        }
+     </style>
+     <form action="">
+        nombre: <input type="text">
+        apellifo: <input type="text">
+     </form>
+</body>
+</html>
