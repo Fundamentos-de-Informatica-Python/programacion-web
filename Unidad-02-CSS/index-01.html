@@ -169,7 +169,8 @@
         }
         img#mosasaurio {
             margin: 10% auto 10% auto;
-            width: 100px
+            width: 100px;
+            visibility: hidden;
         }
         .mivuelta {
             background-color: #fcfcfc;
@@ -204,8 +205,9 @@
             width: 400px;
             visibility: hidden;
         }
-        div#video  {
+        div#video  {   
             margin: 5% auto;
+            padding: 2%;
             display: block;
             background-color: aqua;
             text-align: center;           /* Propiedad Hereda */
@@ -214,25 +216,25 @@
     
     <div id="video">
         <h1>Mosasaurio Attack</h1>
-        <h2>to Shocking Felin</h2> 
+        <h2>to Shocking Feline</h2> 
         <h3>Livestream Fight! </h3>
         <p>
             <small>(raw material)</small>
         </p>
         <button onclick="show('luna')">On</button> 
-        <button onclick="hide('luna')">Off</button>    
+        <button onclick="hide('luna')">Off</button>  
     </div>
 
 
 
     <div>
-        <video src="imagenes/Luna vs Mossasaurio.mp4" id="luna" controls></video>
+        <video src="imagenes/mossasaurio-feline-attack.mp4" id="luna" controls></video>
     </div>
 
 
 
     <hr>
-    <footer style="padding: 20%;">
+    <footer style="padding: 3% 5%;">
         <h5>UCEMA - Programacion Web</h5>
     </footer>
 </body>
