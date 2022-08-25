@@ -12,4 +12,4 @@ Ejemplo Html CSS Tags básicos
 Ejemplo de Formularios
 
 ## Clase 04
-Ejemplos de CSS @ Jurrassic Class!
+Ejemplos de CSS @ Jurrassic Class! - 25/08/2022
