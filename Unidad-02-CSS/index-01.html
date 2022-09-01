@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/estilos.css">
+
+    <style>
+        p.parrafo2 {
+            color: green;
+        } 
+    </style>
+
+    <title>Unidad 02 - HTML</title>
+</head>
+<body>
+    
+    <!-- Unidad 03: Diapositivas 03 a 12 -->
+
+    <h1>Bienvenido al Primer Ejemplo</h1>
+
+    <a name="ejemplo01"></a>
+    <ul>
+        <li>Anatomía de una regla CSS</li>
+        <li>Formas de asignar estilos</li>
+    </ul>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra lorem orci, id fringilla leo eleifend semper. 
+        Vestibulum aliquam augue vel justo pulvinar, sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget. Nullam lectus velit, sagittis vitae commodo vel, blandit vitae lorem. 
+        Praesent vel convallis nulla, ut molestie est. 
+        Suspendisse sodales eu enim in iaculis. Integer nec erat non massa dictum porta ullamcorper ut orci. 
+    </p>
+
+    <p class="parrafo2">
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+
+    <p style="color:blue;">
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+
+
+    <hr>
+    <!-- Diapositiva 08 a 10-->
+    <a name="ejemplo02"></a>
+    <ul>
+        <li>Aplicando más reglas a un mismo selector</li>
+        <li>Aplicando una regla a más de un selector</li>
+        <li>Tipo de selector</li>
+    </ul>
+    <style>
+        p#ejemploDiapo20 {
+            color: goldenrod;
+            width: 300px;
+            border: 1px solid black;
+            padding: 3%;
+            margin: 5%;
+        } 
+    </style>
+    <p id="ejemploDiapo20">
+        Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+
+
+    <!-- Aplicando una regla a más de un selector -->
+    <style>
+        p#uno, h6, p#dos, p.tres {
+            color: aqua;
+            background-color: black;
+            width: 300px;
+            border: 1px dashed coral;
+            padding: 6%;
+            margin: 2%;
+        } 
+    </style>
+    <p id="uno">
+        Per inceptos himenaeos.dsdd
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+    <h6>
+        Ejemplo Diapo 20
+    </h6>
+    <p id="dos">
+        Per inceptos himenaeos.
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+    <p class="tres">
+        Per inceptos himenaeos.
+         Aenean molestie magna nec est varius, pretium vehicula ligula porta.
+         Suspendisse ultricies fringilla nibh sit amet lobortis.
+         Nunc bibendum tincidunt odio, id sagittis metus interdum non.
+    </p>
+
+    <!-- Selector por atributo -->
+    <style>
+        img[alt=trex] {
+            color: aqua;
+            background-color: indigo;
+            width: 300px;
+            border: 1px dashed coral;
+            padding: 6%;
+            margin: 2%;
+        } 
+    </style>
+    <img src="imagenes/dino_02_trex.png" alt="trex">
+
+
+    <!-- Raptors -->
+    <hr>
+    <style>
+
+        img#vrap {
+            border: 10px solid white
+        }
+        img#vrap:hover {
+            border: 10px solid peru
+            
+        }
+        div#raptors {
+            visibility: hidden;
+        }
+    </style>
+    <script>
+        function show(id) {
+            document.getElementById(id).style.visibility="visible";
+        }
+        function hide(id) {
+            document.getElementById(id).style.visibility="hidden";
+        }
+    </script>
+    
+    Raptors! 
+        <button onclick="show('raptors')">On</button> 
+        <button onclick="hide('raptors')">Off</button>
+
+
+    <div id="raptors">
+        <img src="imagenes/dino_03_raptor1.png" id="vrap" alt="Velociraptor">
+        <img src="imagenes/dino_03_raptor2.png" id="vrap" alt="Extinguido">
+    </div>
+
+
+
+    <!-- Pura yapa! -->
+
+    Mosasaurio! 
+        <button onclick="show('mosasaurio')">On</button> 
+        <button onclick="hide('mosasaurio')">Off</button>    
+    <style>
+        .centrar {
+            margin: 10px auto;
+            display: block;
+        }
+        img#mosasaurio {
+            margin: 10% auto 10% auto;
+            width: 100px;
+            visibility: hidden;
+        }
+        .mivuelta {
+            background-color: #fcfcfc;
+            
+            -webkit-transition: all 1.3s ease-in-out;
+            -moz-transition:    all 1.3s ease-in-out;
+            -o-transition:      all 1.3s ease-in-out;
+            -ms-transition:     all 1.3s ease-in-out;
+        }
+        .mivuelta:hover {
+            background-color: rgba(255,204,51,0.7);
+            
+            -webkit-transform: rotate(-360deg) scale(7.2);
+            -moz-transform:    rotate(-360deg) scale(7.2);
+            -o-transform:      rotate(-360deg) scale(7.2);
+            -ms-transform:     rotate(-360deg) scale(7.2);
+        }
+    </style>
+    
+    <br><br><br><br><br>
+    <img src="imagenes/dino_04_mosasaurio.png" id="mosasaurio"  class="mivuelta centrar">
+
+
+    <br><br><br>    
+    <br><br><br>
+    <hr>
+
+    <style>
+        video {
+            margin: 10px auto;
+            display: block;
+            width: 400px;
+            visibility: hidden;
+        }
+        div#video  {   
+            margin: 5% auto;
+            padding: 2%;
+            display: block;
+            background-color: aqua;
+            text-align: center;           /* Propiedad Hereda */
+        }
+    </style>
+    
+    <div id="video">
+        <h1>Mosasaurio Attack</h1>
+        <h2>to Shocking Feline</h2> 
+        <h3>Livestream Fight! </h3>
+        <p>
+            <small>(raw material)</small>
+        </p>
+        <button onclick="show('luna')">On</button> 
+        <button onclick="hide('luna')">Off</button>  
+    </div>
+
+
+
+    <div>
+        <video src="imagenes/mossasaurio-feline-attack.mp4" id="luna" controls></video>
+    </div>
+
+
+
+    <hr>
+    <footer style="padding: 3% 5%;">
+        <h5>UCEMA - Programacion Web</h5>
+    </footer>
+</body>
+</html>
