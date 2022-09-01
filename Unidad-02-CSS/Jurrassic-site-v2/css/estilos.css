@@ -28,7 +28,6 @@ img[alt=trex] {
     width: 400px;
     border: 1px dashed coral;
     padding: 3%;
-    margin: 2%;
 }
 
 img.dino {
@@ -39,7 +38,6 @@ img.dino {
     width: 400px;
     border: 1px dashed coral;
     padding: 3%;
-    margin: 2%;
 }
 
 img.big {
@@ -50,6 +48,12 @@ img.centrar {
     display: block;
     margin: auto;
 }
+
+.center {
+    display: block;
+    margin: auto;
+}
+
 /* Contenedores en la página de Ayuda 0-800 DINO  */
 .contenedor1 {
     margin: 5px;

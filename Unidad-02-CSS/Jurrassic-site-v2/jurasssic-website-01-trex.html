@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Class</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javascript/utils.js"></script>
 </head>
 <body>
     
@@ -26,7 +27,11 @@
     <section>
         <h1> Tiranosaurio Rex</h1>
         <small> Keep out!</small>
-        <img src="imagenes/dino_02_trex.png" alt="trex">
+        <img src="imagenes/dino_02_trex.png" id="dino" alt="trex">
+    </section>
+    <section  class="center">
+        <button onclick="show('dino')">On</button> 
+        <button onclick="hide('dino')">Off</button>   
     </section>
 
 </body>
