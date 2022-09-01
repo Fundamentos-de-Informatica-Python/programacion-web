@@ -1,0 +1,19 @@
+nav {
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    background-color: pink;
+
+    margin: 5% auto;
+    display: block;
+
+}
+nav a {
+
+    padding: 10px;
+    background-color: green;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: aquamarine;
+}
