@@ -5,7 +5,18 @@ nav {
     background-color: pink;
 
     margin: 2% auto;
+
     display: block;
+    
+
+    /*
+    display: flex;
+    Justify-content: flex-start;
+    Justify-content: center;
+    Justify-content: flex-end;
+    Justify-content: space-around;
+    Justify-content: space-between;
+    */
 
 }
 nav a {

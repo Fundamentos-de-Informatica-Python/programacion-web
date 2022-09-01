@@ -1,0 +1,122 @@
+body {
+    background-color: lightgray;
+}
+
+.elemento {
+    color: white;
+    margin: 5px;
+    width: 50px;
+    height: 50px;
+    background: orange;
+    text-align: center;
+}
+
+.contenedor {
+    width: 500px;
+    height: 200px;
+    background: white;
+    padding: 10px;
+    border: 10px solid darkblue;
+    margin: 20px;
+
+    /* -- Flex
+    display: flex;
+    --*/
+
+    /* -- Flex-direction 
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    --*/
+
+    
+    /* -- Flex-wrap 
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    flex-wrap: wrap-reverse;
+    --*/
+
+    /* -- Flex-flow 
+    display: flex;
+    
+    flex-flow: row wrap;
+    flex-flow: column wrap;
+    
+    flex-flow: column;
+    flex-flow: column-reverse;
+    
+    flex-flow: row-reverse wrap;
+    
+    flex-flow: wrap;
+    flex-flow: wrap-reverse;
+    flex-flow: nowrap;
+    --*/
+
+
+
+    /* -- Justify-contentJustify-content
+
+    display: flex;
+   
+    Justify-content: flex-start;
+    Justify-content: flex-end;
+    Justify-content: center;
+    Justify-content: space-around;
+    Justify-content: space-between;
+    */
+    
+    /*-- Align-items  
+    display: flex;
+    align-items: flex-start;
+    align-items: flex-end;
+    align-items: center;
+    align-items: baseline;
+    align-items: stretch;
+    */
+
+
+    /*-- Align-Content  
+    display: flex;
+    align-content: flex-end;
+    align-content: flex-start;
+    align-content: center;
+    align-content: stretch;
+    align-content: space-between;
+    align-content: space-around;
+    */
+    
+    /*--- flex-basis
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    flex-direction: row;
+    */
+    
+    /*--- flex-grow   // en el va
+    display: flex;
+    flex-grow: 5;   
+
+    display: flex;
+    flex-shrink: 5; 
+    */
+    
+    
+    display: flex;
+}
+
+.elemento {
+    width: 50px;  /* 150px;  */
+
+}
+
+.elemento1 {
+    order: 2;
+}
+
+.elemento2 {
+    order: 3;
+}
+

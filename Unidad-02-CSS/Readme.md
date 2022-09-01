@@ -18,3 +18,11 @@ Es mejor una versión con el CSS extraído en un archivo aparte que pueda ser in
 
 
 ## Jurassic-site-v2
+
+Versión #1 del "Jurassic site"
+El Css tiene su archi propio
+Se ve "aglo" de javascript
+
+## parte-II
+
+Teoría de Flexbox
