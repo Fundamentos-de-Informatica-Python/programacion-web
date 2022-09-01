@@ -11,6 +11,10 @@ body {
     text-align: center;
 }
 
+.elemento {
+    width: 50px;  /* 150px;  */
+}
+
 .contenedor {
     width: 500px;
     height: 200px;
@@ -22,29 +26,31 @@ body {
     /* -- Flex
     display: flex;
     --*/
-
-    /* -- Flex-direction 
+  
     display: flex;
-    flex-direction: row;
     flex-direction: row-reverse;
-    flex-direction: column;
+    flex-direction: row;
     flex-direction: column-reverse;
+    flex-direction: column;
+   
+    /* -- Flex-direction 
     --*/
 
+ 
     
     /* -- Flex-wrap 
     display: flex;
-    flex-wrap: wrap;
     flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-wrap: wrap-reverse;
     --*/
 
+        
     /* -- Flex-flow 
     display: flex;
-    
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     flex-flow: column wrap;
-    
+
     flex-flow: column;
     flex-flow: column-reverse;
     
@@ -55,36 +61,38 @@ body {
     flex-flow: nowrap;
     --*/
 
-
-
+    
+    
+    
+    
     /* -- Justify-contentJustify-content
-
     display: flex;
-   
-    Justify-content: flex-start;
-    Justify-content: flex-end;
     Justify-content: center;
-    Justify-content: space-around;
+    Justify-content: flex-end;
     Justify-content: space-between;
+    Justify-content: flex-start;
+    Justify-content: space-around;
     */
+    
+    
     
     /*-- Align-items  
     display: flex;
-    align-items: flex-start;
     align-items: flex-end;
+    align-items: stretch;
+    align-items: flex-start;
     align-items: center;
     align-items: baseline;
-    align-items: stretch;
     */
 
-
+    
     /*-- Align-Content  
     display: flex;
-    align-content: flex-end;
     align-content: flex-start;
+    align-content: flex-end;
+    align-content: space-between;
     align-content: center;
     align-content: stretch;
-    align-content: space-between;
     align-content: space-around;
     */
     
@@ -96,21 +104,19 @@ body {
     */
     
     /*--- flex-grow   // en el va
-    display: flex;
-    flex-grow: 5;   
-
+    
     display: flex;
     flex-shrink: 5; 
+    
+    display: flex;
+    flex-grow: 5;   
     */
     
     
-    display: flex;
+    
 }
 
-.elemento {
-    width: 50px;  /* 150px;  */
 
-}
 
 .elemento1 {
     order: 2;
