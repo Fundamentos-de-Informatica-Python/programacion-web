@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidad 02 - HTML (Cont)</title>
+
+    <script src="scripts/utils.js"></script>
+</head>
+<body>
+
+    <!-- Unidad 03: Diapositivas 14 a 20 -->
+    
+    <h1>Bienvenida al Segundo Ejemplo</h1>
+
+    <a name="ejemplo01"></a>
+    <ul>
+        <li>Especificidad</li>
+        <li>Formas de asignar estilos</li>
+        <li>Textos y Fuentes</li>
+
+    </ul>
+    
+
+    <!-- Especificidad -->
+    <br/ ><hr/>
+    <style>
+        body {
+            color: darkblue;
+        }
+        p {
+            color: red;
+        }
+        #parrafo {
+            color: blue;
+        }
+        .claseparrafo {
+            color: green;
+        }
+    </style>
+    <p id="parrafo" class="claseparrafo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra
+        lorem orci, id fringilla leo eleifend semper. 
+        Vestibulum aliquam augue vel justo pulvinar, sit amet ultrices justo bibendum. 
+        Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget.
+    </p>
+
+
+    <!-- Formas de asignar estilos --->
+    <!--
+        Autores Backgroud:
+        https://www.flaticon.es/icono-gratis/fosil_895884
+        https://www.flaticon.es/icono-gratis/tyrannosaurus-rex_1674514
+        Freepik Smashicons
+    -->
+    <br/ ><hr/>
+    <style>
+        p {
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 30px;
+            text-decoration: underline;
+            font-style: italic;
+            background-image: url('imagenes/icono-06-huevo-dino.png')  ;
+        }
+
+        ul#lista2 li {                            /* Asigna a un "li" que depende de un ""ul* con id */
+            text-align: center;
+            line-height: 4;
+            letter-spacing: 2px;
+            background-color: yellow;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    </style>
+
+    <p>
+        Sit amet ultrices justo bibendum. Nam pharetra egestas augue, 
+        vel consectetur augue placerat eget. Nullam lectus velit, 
+        sagittis vitae commodo vel, blandit vitae lorem. 
+        Praesent vel convallis nulla, ut molestie est. 
+    </p>
+
+    <ul id="lista2">
+        <li>Mi primer elemento</li>
+        <li>Mi Segundo elemento</li>
+        <li>Mi tercer elemento</li>
+    </ul>
+    
+
+
+
+    
+    <br/ ><hr/>
+    <h3>Textos y Fuentes</h3>
+    <style>
+        .tipo1 {
+            height: 300px;
+            width:  300px;
+            background-image: url(imagenes/icono-06-huevo-dino.png);
+            background-repeat: repeat-y;
+            background-position: left;
+            background-color: blue;
+        }
+
+        .tipo2 {
+            height: 300px;
+            width:  300px;
+            background-image: url(imagenes/icono-06-huevo-dino.png);
+            background-repeat: repeat-x;
+            background-position: center;
+            background-color: red;
+        }
+    </style>
+    <div class="tipo1"></div>
+    <div class="tipo2"></div>
+    
+
+
+    <hr>
+    Diapo 21: Listas con items distintos
+
+    <style>
+        ul .estilo1 {
+            list-style-type: square;
+            list-style-position: inside;
+        }
+        ul .estilo2 {
+            list-style-type: decimal;
+            list-style-position: outside;           
+        }
+        ul .estilo3 {
+            list-style-type: lower-roman;           
+        }
+        ul .estilo4 {
+            list-style-image: url("imagenes/icono-03-triceratops-small.png"); 
+            
+        }
+        .left {
+            margin: 20%;
+        }
+    </style>
+
+    <ul class="left">
+        <li class="estilo1">Lorem ipsum dolor sit amet, elit. e </li>
+        <li class="estilo2">placerat eget.  vitae lorem.  </li>
+        <li class="estilo3">nec est varius, pretium vehicula liguf </li>
+        <li class="estilo4">A sit amet, consectetur  </li>
+    </ul>
+
+
+    
+
+
+
+    <hr>
+    <br>
+    <footer>
+        <a href="https://www.flaticon.es/iconos-gratis/dinosaurio" title="dinosaurio iconos">Dinosaurio iconos creados por Freepik - Flaticon</a>
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario CV</title>
+</head>
+<body>
+    
+    <h1>Globan</h1>
+
+    <h2>Gracias por el interes en nuestra empresa!</h2>
+
+    <h3>Por favor, completa tus datos!</h3>
+
+    <br>
+    
+    <!--
+    table>tbody>tr*10>td*2
+    -->
+
+<form 
+    action="mailto:peinchaust@ucema.edu.ar" method="post" enctype="text/plain">
+
+
+    <fieldset>
+        <legend>Crear Cuenta con: Mail y Password</legend>
+        
+        <label for="mailCV">Mail: </label>
+        <input type="email" name="mailCV" id="" value="@">
+        
+        <br>
+
+        <label for="passwd">Password: </label>
+        <input type="password" name="passwd" id="" placeholder="***">
+    </fieldset>
+
+<br>
+    <table border="0">
+        <tbody>
+         
+            <tr>
+                <td>Nombre y Apellido</td>
+                <td>
+                    <input type="text" name="nombre" id=""
+                    size="30"
+                    placeholder="Ingrese el Nombre y Apellido">
+                </td>
+            </tr>
+            <tr>
+                <td>Foto</td>
+                <td>
+                    <input type="file" name="fotocv" 
+                    id="">
+                </td>
+            </tr>
+            <tr>
+                <td>Edad</td>
+                <td>
+                    <input type="number" name="edad" id="" value="18"
+                    step="0.5">
+                </td>
+            </tr>
+            <tr>
+                <td>Sexo</td>
+                <td>
+                    <input type="radio" name="sexo" id="" value="M">Masc. 
+                    <input type="radio" name="sexo" id="" value="F">Fem.
+                    <input type="radio" name="sexo" id="" value="O">Otro
+                    <input type="radio" name="sexo" id="" value="PNO">Pref. no decir
+
+
+                </td>
+            </tr>
+
+            <tr>
+                <td>Fecha y Hora Entrevista</td>
+                <td>
+                    <input type="datetime-local" name="fecha" id=""
+                    >
+                </td>
+            </tr>
+            <tr>
+                <td>Carta de Presentación</td>
+                <td>
+                    <textarea 
+                        name="" id="" cols="30" rows="10"
+                        maxlength="500"
+                        placeholder="Describa brevement por qué te gustaría trabajar conm nosotros"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Linkedin</td>
+                <td>
+                    <input type="text" name="" id=""
+                    value="http:/linkedin.com/"
+                    placeholder="Ingrese su linkedin">
+                </td>
+            </tr>
+            <tr>
+                <td>Teléfono</td>
+                <td>
+                    <select name="prefijo" id="">
+                        <option value="+51">Perú</option>
+                        <option value="+549" selected>Argentina</option>
+                        <option value="+55">Brasil</option>
+                        <option value="+56">Chile</option>
+                        <option value="+595">Paraguay</option>
+                        <option value="+598">Uruguay</option>
+                    </select>
+                    <input type="text" name="" id=""
+                    maxlength="10">
+                </td>
+            </tr>
+            <tr>
+                <td>Cualidades</td>
+                <td>
+                    <input type="checkbox" name="Responsalbe" id="">Responsalbe
+                    <input type="checkbox" name="Proactivo" id="">Proactivo
+                    <input type="checkbox" name="Resiliente" id="">Resiliente
+                    <input type="checkbox" name="empático" id="">empático
+                    <input type="checkbox" name="atento" id="">atento
+                    <input type="checkbox" name="teamworker" id="">teamworker
+                    <input type="checkbox" name="ninguno" id="">ninguno
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Borrar Formulario">
+
+</form>
+
+
+
+
+
+</body>
+</html>
