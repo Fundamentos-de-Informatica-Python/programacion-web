@@ -19,21 +19,24 @@ function edad() {
 
 function ayuda(id) {
 
-    len = document.getElementById(id).innerHTML.length
+    let longSpan = document.getElementById(id).innerHTML.length
 
-    texto = "Recuerde respetar a los animales (otra"
+    
 
-    if (len < 100) {
+    if (longSpan < 100) {
 
-        texto = "<p>Los dinosaurios son animales slavajes! <p>" + 
+        document.getElementById(id).innerHTML = "<p>Los dinosaurios son animales slavajes! <p>" + 
         "<ul><li>No son nuestras mascotas" +
         "    <li>No debemos molestarlos, ni acariciarlos" + 
         "    <li>Por más que nos pidan comida, no debemos alimentarlos" +
         "    <li>Son muy tímidos... no les gusta que les tomen fotos..." +
         "</ul>"
     
+    } else {
+
+        document.getElementById(id).innerHTML = "Recuerde respetar a los animales (otra)"
     }
 
-    document.getElementById(id).innerHTML = texto
+    
      
 }

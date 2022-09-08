@@ -18,6 +18,7 @@ function prueba2() {
 
     /* Otra Variante */
 
+    console.log('Paises:', paises)
     for (pais of paises) {
         console.log('Pais ['+pais+']:', pais.innerHTML)
     }
@@ -25,6 +26,8 @@ function prueba2() {
 
 function prueba3() {
     let divs = document.getElementsByTagName('div')
+
+    console.log('divs:', divs)
 
     for (d of divs) {
         console.log('d ['+d+']:', d.innerHTML)
