@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Class</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <h1>
+        <img src="imagenes/jurassic-logo.jpg" width="8%">
+        Jurassic class
+    </h1>
+    <hr/>
+
+    <nav>
+        <a href="jurasssic-website-01-trex.html">TRex</a>
+        <a href="jurasssic-website-02-raptor.html">Rapotors</a>
+        <a href="jurasssic-website-03-mosa.html">Mosasaurio</a>
+        <a href="jurasssic-website-04-argsaurio.html">ArgSaurios</a>
+        <a href="jurasssic-website-05-0800Dino.html">0-800-Dinos</a>
+    </nav>
+        
+
+    <section>
+        <h1>Mossasaurio</h1>
+        <small> Mosa mata TRex !</small>
+        <img src="imagenes/dino_04_mosasaurio.png" id="mosasaurio" class="centrar mivuelta">
+    </section>
+        
+    <style>
+        .centrar {
+            margin: 90px auto;
+            display: block;
+        }
+        img#mosasaurio {
+            margin: 12% auto 10% auto;
+            width: 100px;
+        }
+        .mivuelta {
+            background-color: #fcfcfc;
+            
+            -webkit-transition: all 1.3s ease-in-out;
+            -moz-transition:    all 1.3s ease-in-out;
+            -o-transition:      all 1.3s ease-in-out;
+            -ms-transition:     all 1.3s ease-in-out;
+        }
+        .mivuelta:hover {
+            background-color: rgba(255,204,51,0.7);
+            
+            -webkit-transform: rotate(-360deg) scale(7.2);
+            -moz-transform:    rotate(-360deg) scale(7.2);
+            -o-transform:      rotate(-360deg) scale(7.2);
+            -ms-transform:     rotate(-360deg) scale(7.2);
+        }
+    </style>
+    
+</body>
+</html>

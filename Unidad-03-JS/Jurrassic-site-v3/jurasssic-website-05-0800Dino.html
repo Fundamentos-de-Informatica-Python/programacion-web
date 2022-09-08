@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurassic Class</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="javascript/utils.js"></script>
+</head>
+<body>
+    
+    <h1>
+        <img src="imagenes/jurassic-logo.jpg" width="8%">
+        Jurassic class
+    </h1>
+    <hr/>
+
+    <nav>
+        <a href="jurasssic-website-01-trex.html">TRex</a>
+        <a href="jurasssic-website-02-raptor.html">Rapotors</a>
+        <a href="jurasssic-website-03-mosa.html">Mosasaurio</a>
+        <a href="jurasssic-website-04-argsaurio.html">ArgSaurios</a>
+        <a href="jurasssic-website-05-0800Dino.html">0-800-Dinos</a>
+    </nav>
+ 
+
+    <section>
+        <h1>0800 - DINO</h1>
+        <small>Si fuiste atacado por un dinosaurio... tranquilo! estamos para ayudarte!</small>
+        <br>
+
+    </section>
+    <br>
+
+
+
+    <style>
+        form {
+            width: 80%;
+        }
+        label {
+            display: block;
+            margin: .5em 0 0 0;
+        }
+        .btn {
+            display: block;
+            margin: 1em 0;
+        }
+
+        div {
+           margin: .4em 0;
+        }
+        
+        div label {
+            width: 25%;
+            float: left;
+            
+        }
+        div#container {
+            width: 70%;
+            display: flex;
+            flex-flow: column;
+            float: left;
+
+        }
+    </style>
+
+
+    <!--
+        Sample from
+        https://www.arkaitzgarro.com/css2/capitulo-9.html
+    -->
+
+
+
+    <section class="formulario">
+    
+        <form action="mailto:peinchaust@ucema.edu.ar" class="center" method="post" enctype="text/plain">
+            <fieldset>
+                <legend>Datos de Contacto: [1/3]</legend>
+            
+                <div>
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" name="nombre" id="" size="30" placeholder="Ingrese el Nombre y Apellido"> 
+                </div>
+
+                <div>
+                    <label for="mail">Mail</label> 
+                    <input type="email" name="mail" id="" value="@">
+                </div>            
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Descripción del Dinosaurio: [2/3]</legend>
+                <div>
+                    <label for="dino">Tipo</label>
+                    <select name="dino" id="">
+                        <option value="trex">Trex</option>
+                        <option value="raptor">raptor</option>
+                        <option value="mosasaurio">mosasaurio</option>
+                        <option value="Argentinosaurio">Argentinosaurio</option>
+                        <option value="triceratops">triceratops</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Descripción del Ataque: [3/3]</legend>
+                <div>
+                    <br>
+                    <label for="ataque">Indique si las razones del ataque, es alguna de las siguientes:</label>
+                    <fieldset>
+                        <input type="checkbox" name="ataque" id="alimentar">Acerqué la mano para darle de comer <br>
+                        <input type="checkbox" name="ataque" id="tierno">Se veía muy tierno, y quise acariciarlo <br>
+                        <input type="checkbox" name="ataque" id="selfie">Me quise sacar una selfie, y me puse al lado...<br>
+                        <input type="checkbox" name="ataque" id="herviboro">En Jurassic Park los herviboro era innofensivos..<br>                    
+                        <br>
+                        
+                        <input type="button" onclick="ayuda('error')" value="Que hice mal?" />
+                    </fieldset>
+                </div>
+
+                <span id="error">
+                    Recuerde respetar a los animales
+                </span>
+            </fieldset>
+
+            <input class="btn" type="submit" value="Reportar Ataque" />
+
+        </form>
+
+
+    </section>    
+    
+
+    <br>
+    <img src="imagenes/icono-06-huevo-dino.png" class="center" alt="">
+</body>
+</html>
