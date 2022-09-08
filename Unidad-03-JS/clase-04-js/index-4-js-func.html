@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo de If</title>
+</head>
+<body>
+    
+    <h1>Pagina de Control </h1>
+    <h2>Validar - Autorizacion de los Padres</h2>
+
+    <script>
+        function validarEdadv1() {
+            var edad = prompt('Cual es tu edad (v1)')
+        
+            if (edad < 18) {
+                alert('Usted necesita la supervisón de sus padres para Ingresar  ')
+            } else {
+                alert('ok... puede pasar al Jurassic Park')
+            }
+
+            console.log(nombre)
+        }
+
+        let validarEdadv2 = function() {
+            var edad = prompt('Cual es tu edad (v2)')
+        
+            if (edad < 18) {
+                alert('Usted necesita la supervisón de sus padres para Ingresar  ')
+            } else {
+                alert('ok... puede pasar al Jurassic Park')
+            }
+
+            console.log(nombre)
+        }
+
+        let validarEdadv3 = () => {
+            var edad = prompt('Cual es tu edad (v3)')
+        
+            if (edad < 18) {
+                alert('Usted necesita la supervisón de sus padres para Ingresar  ')
+            } else {
+                alert('ok... puede pasar al Jurassic Park')
+            }
+
+            console.log(nombre)
+        }
+
+
+        let suma = function (n1, n2) {
+            return n1 + n2
+        }
+
+        let rta = suma(3, 4)
+
+        console.log(suma)
+        console.log(rta)
+    </script>
+
+
+    <button onclick="javascript:validarEdadv1()">
+        v1: Ingrese su Edad
+    </button>
+    <button onclick="javascript:validarEdadv2()">
+        v2: Ingrese su Edad
+    </button>
+    <button onclick="javascript:validarEdadv3()">
+        v3: Ingrese su Edad
+    </button>
+</body>
+</html>

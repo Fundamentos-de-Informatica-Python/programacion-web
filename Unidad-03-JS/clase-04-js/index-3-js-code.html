@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo de If</title>
+</head>
+<body>
+    
+    <h1>Pagina de Control </h1>
+    <h2>Validar - Autorizacion de los Padres</h2>
+
+    <script>
+        function validarEdad() {
+
+            
+            var edad = prompt('Cual es tu edad')
+        
+            if (edad < 18) {
+
+                var nombre = "hhh"
+                alert('Usted necesita la supervisón de sus padres para Ingresar  ')
+            } else {
+                var nombre = "iii"
+                alert('ok... puede pasar al Jurassic Park')
+                // document.location 
+            }
+
+            console.log(nombre)
+        }
+
+        function mostrarEdad() {
+            alert('tu edad era')
+        }
+    </script>
+
+
+    <button onclick="javascript:validarEdad()">
+        Ingrese su Edad
+    </button>
+    <button onclick="javascript:mostrarEdad()">
+        Mostrar la Edad
+    </button>
+</body>
+</html>
