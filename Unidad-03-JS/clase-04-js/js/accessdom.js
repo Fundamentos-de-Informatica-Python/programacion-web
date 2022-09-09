@@ -1,3 +1,6 @@
+/**
+ * Muestra todos los divs en la consola
+ */
 function prueba1() {
     let divs = document.getElementById('app').innerHTML
 
@@ -8,7 +11,9 @@ function prueba1() {
     console.log(parrafo)
 }
 
-
+/**
+ * Muestra todos los elementos con "class=pais" en la consola
+ */
 function prueba2() {
     let paises = document.getElementsByClassName('pais')
 
@@ -23,6 +28,9 @@ function prueba2() {
     }
 }
 
+/**
+ * Muestra todos los elementos del tag "DIV" en la consola
+ */
 function prueba3() {
     let divs = document.getElementsByTagName('div')
 
@@ -33,6 +41,9 @@ function prueba3() {
 }
 
 
+/**
+ * Cambia el contenido (DOM) del primer párrafo
+ */
 let toggle = true
 function prueba4(id) {
     let parrafo = document.getElementById(id)
@@ -47,6 +58,9 @@ function prueba4(id) {
 }
 
 
+/**
+ * Agrega dinámicamente una porcion del DOM, un nodo hijo
+ */
 function prueba5() {
     let nuevoParrafo = document.createElement('p')
 
