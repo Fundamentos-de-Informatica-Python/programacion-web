@@ -1,0 +1,12 @@
+#myLog {
+    width: 80%;
+    height: 30%;
+    background-color: azure;
+}
+
+legend {
+    margin: 3%;
+    padding: 1%;
+    width: 20%;
+    background-color: greenyellow;
+}
