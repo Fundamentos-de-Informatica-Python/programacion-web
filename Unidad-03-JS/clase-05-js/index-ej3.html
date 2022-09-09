@@ -12,30 +12,24 @@
 
     <!--
         Programación Web - 03 - Javascript
-        Diapo 51
+        Diapo 53
     -->
-    
-
-
     <section>
-        <button id="btnPrincipal">Click</button>
+        <button onclick="respuestaClick()">Click</button>
 
         <legend>Este es mi Log:</legend>
-
         <span id="myLog">
-            Salida: ...
+            Salida (Ejemplo 3): ...
         </span>
-
     </section>
 
-
+    <!--
+        Ejemplo del Script
+        Diapo 53
+    -->
     <script>
-        let boton = document.getElementById('btnPrincipal')
-
-        boton.addEventListener("click", respuestaClick)
         function respuestaClick() {
             console.log('Respuesta al evento "Click"')
-
             document.getElementById('myLog').append('hizo clicl! ... ')
         }
     </script>
