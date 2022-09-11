@@ -1,0 +1,95 @@
+nav {
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    background-color: pink;
+
+    margin: 2% auto;
+
+    display: block;
+    
+
+    /*
+    display: flex;
+    Justify-content: flex-start;
+    Justify-content: center;
+    Justify-content: flex-end;
+    Justify-content: space-around;
+    Justify-content: space-between;
+    */
+
+}
+nav a {
+    color: white;
+    padding: 10px;
+    background-color: green;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: aquamarine;
+}
+
+
+/* Solo aplica al trex - porque tiene una propiedad "alt=trex" */
+img[alt=trex] {
+    margin: 3% auto;
+    display: block;
+
+    background-color: indigo;
+    width: 400px;
+    border: 1px dashed coral;
+    padding: 3%;
+}
+
+img.dino {
+    margin: 3% auto;
+    display: block;
+
+    background-color: darkcyan;
+    width: 400px;
+    border: 1px dashed coral;
+    padding: 3%;
+}
+
+img.big {
+    width: 900px;
+}
+
+img.centrar {
+    display: block;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin: auto;
+}
+
+/* Contenedores en la página de Ayuda 0-800 DINO  */
+.contenedor1 {
+    margin: 5px;
+    padding: 10px;
+    background-color: yellow;
+    border-color: red;
+    border-style: solid;
+}
+
+.contenedor2 {
+    font-size: 10px;
+    margin: 20px;
+    padding: 30px;
+    width: 100px;
+    height: 50px;
+    background-color: aquamarine;
+    border-width: 10px;
+    border-color: blue;
+    border-style: solid;
+    overflow-y: scroll;
+    /*
+    overflow-y: auto;
+    overflow-x: auto;
+    overflow-y: auto;
+    */
+}
+
+

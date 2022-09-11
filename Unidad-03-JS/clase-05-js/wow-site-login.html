@@ -10,35 +10,22 @@
 </head>
 <body>
 
+    <h1>WoW Site!</h1>
     <!--
         Programación Web - 03 - Javascript
         Diapo 56: Eventos del Submit - Envio del Formulario
     -->
-    <form id="formulario" action="">
+    <form id="formulario" action="wow-site-welcome.html">
         <fieldset>
             <legend>Datos del Usuario</legend>
 
-            <label for="nombre">Nombre: </label>
-            <input id="nombre" type="text">
+            <label for="usuario">Usuario: </label>
+            <input id="usuario" type="text">
 
-            <label for="apellido">Apellido: </label>
-            <input id="apellido" type="text">
+            <label for="password">Password: </label>
+            <input id="password" type="password">
 
-            <label for="edad">Edad: </label>
-            <input id="edad" type="number">
-
-            <label for="tel">telefono: </label>
-            <input id="tel" type="text">
-
-            <label for="tel">País: </label>
-            <select name="pais" id="pais">
-                <option value="ARG">Argentina</option>
-                <option value="BRA">Brasil</option>
-                <option value="URU">Uruguay</option>
-                <option value="CHI">Chile</option>
-                <option value="BOL">Bolivia</option>
-                <option value="PAR">Paraguay</option>
-            </select>
+        
 
             <button type="submit">Enviar</button>
 
@@ -59,18 +46,23 @@
 
     <!--
         Ejemplo del Script
-        Diapo 55: Eventos del Teclado
-        Diapo 56: Eventos del Cambio
+        Diapo 57: Formularios Submit
     -->
     <script>
         let myForm     = document.getElementById('formulario')
+        let usuario    = document.getElementById('usuario')
+        let password   = document.getElementById('password')
 
         myForm.onsubmit = (e) => { validarFormulario(e) }
         
         function validarFormulario(e) {
             
-            e.preventDefault(); // Para que no envie le formulario
-            doLog('Formulario enviardo..')
+            if (password.value == 'SuperSecret') {
+                doLog('Formulario enviardo..')
+            } else {
+                e.preventDefault(); // Para que no envie le formulario
+                alert('El usuario ' + usuario.value + ' no puede ingresar... porque no puso la clave SuperSecret')
+            }
         }
     </script>
 
