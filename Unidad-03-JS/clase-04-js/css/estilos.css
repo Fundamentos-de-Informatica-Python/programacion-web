@@ -1,0 +1,26 @@
+fieldset {
+    margin: 3%;
+
+    background-color: azure;
+    border: 1px greenyellow thin;
+}
+
+fieldset legend {
+    padding: 1% 4%;
+    background-color: aqua;
+}
+
+fieldset label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+#app {
+    padding: 2%;
+    margin: 2%;
+    border-color: blue;
+    border-width:  10px thin;
+    background-color: azure;
+}
+
+
