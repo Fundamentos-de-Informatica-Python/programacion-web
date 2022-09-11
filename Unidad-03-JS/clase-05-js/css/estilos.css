@@ -27,3 +27,14 @@ legend {
     padding-top: 10px;
     padding-left: 50px;
 }
+
+
+fieldset label {
+    display: block;
+    margin: .5em 0 0 0;
+}
+
+fieldset button {
+    display: block;
+    margin-top: 20px;
+}

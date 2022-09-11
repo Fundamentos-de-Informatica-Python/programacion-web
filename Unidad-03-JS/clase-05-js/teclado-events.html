@@ -12,17 +12,20 @@
 
     <!--
         Programación Web - 03 - Javascript
-        Diapo 55: Eventos del Tecladp
+        Diapo 55: Eventos del Teclado
     -->
     <form action="">
         <fieldset>
             <legend>Datos del Usuario</legend>
+
             <label for="nombre">Nombre: </label>
             <input id="nombre" type="text">
 
-            <br>
             <label for="edad">Edad: </label>
-            <input id="edad"   type="number">
+            <input id="edad" type="number">
+
+            <button type="submit">Enviar</button>
+
         </fieldset>
     </form>
        
@@ -40,19 +43,18 @@
 
     <!--
         Ejemplo del Script
-        Diapo 54: Eventos del Mouse
+        Diapo 55: Eventos del Teclado
     -->
     <script>
-        let nombre      = document.getElementById('nombre')
+        let nombre   = document.getElementById('nombre')
         let edad     = document.getElementById('edad')
 
 
 
-        boton.onclick      = () => { doLog('Hizo Click! ...') };
-        legend.onmousemove = () => { doLog('Movio el Mouse...') };
-
-        casa.onmouseenter = () => { doLog('Bienvenido a Casa!...') };
-        casa.onmouseleave = () => { doLog('No te vayas!!...') };
+        nombre.onkeyup     = () => { doLog('KeyUp! ...') };
+        
+        edad.onkeydown = () => { doLog('KeyDown...') };
+        edad.onkeyup   = () => { doLog('KeyUp...') };
         
     </script>
 
