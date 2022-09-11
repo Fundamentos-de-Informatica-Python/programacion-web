@@ -12,9 +12,9 @@
 
     <!--
         Programación Web - 03 - Javascript
-        Diapo 55: Eventos del Teclado
+        Diapo 56: Eventos del Submit - Envio del Formulario
     -->
-    <form action="">
+    <form id="formulario" action="">
         <fieldset>
             <legend>Datos del Usuario</legend>
 
@@ -63,24 +63,15 @@
         Diapo 56: Eventos del Cambio
     -->
     <script>
-        let nombre     = document.getElementById('nombre')
-        let apellido   = document.getElementById('apellido')
-        let edad       = document.getElementById('edad')
-        let tel        = document.getElementById('tel')
-        let pais       = document.getElementById('pais')
+        let myForm     = document.getElementById('formulario')
 
-
-        nombre.onkeyup     = () => { doLog('KeyUp! ...') };
-
-        apellido.onblur     = () => { doLog('Dejo el campo apellido...') };
-        apellido.onfocus    = () => { doLog('Ingreso al campo apellido...') };
+        myForm.onsubmit = (e) => { validarFormulario(e) }
         
-        edad.onkeydown = () => { doLog('KeyDown...') };
-        edad.onkeyup   = () => { doLog('KeyUp...') };
-
-        tel.onchange   = () => { doLog('cambio el telefono...') };
-        pais.onchange  = () => { doLog('Seleccion un país..') };
-        
+        function validarFormulario(e) {
+            
+            e.preventDefault(); // Para que no envie le formulario
+            doLog('Formulario enviardo..')
+        }
     </script>
 
 
