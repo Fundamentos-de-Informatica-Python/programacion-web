@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+
+    <a href="index.html">Volver</a>
+    <hr>
+    <!--
+        Diapositiva 9
+    -->
+
+    <button id="btn1" onclick="funA()">Click Asincrónico</button>
+    <button id="btn2" onclick="testBloqueante()">Click Bloqueante</button>
+    <button id="btn3" onclick="testNoBlock()">Click No Bloqueante</button>
+
+    <script>
+        function testBloqueante() {
+
+            console.log('iniciando')
+            let dato = obtenerDatoSincrónico()
+            console.log('dato: ' + dato)
+            console.log('terminando')
+        }
+        function obtenerDatoSincrónico() {
+            mySleep(3000)  // 3ooo milisegundos
+            return 'Jorge'
+        }
+
+        /**
+         * No Bloqueanotes
+         */
+         function testNoBlock() {
+            console.log('iniciando')
+            let dato = myTimeout(1000)
+            console.log('terminando')
+         }
+
+
+        /**
+         * Utiles
+         */
+        function mySleep(milliseconds) {
+            var start = new Date().getTime();
+                for (var i = 0; i < 1e7; i++) {
+                    if ((new Date().getTime() - start) > milliseconds) {
+                    break;
+                }
+            }
+        }
+
+        function myTimeout(milisegundos) {
+            console.log('Inicia un timeout...');
+            setTimeout(console.log.bind(null, 'Despues de ' + milisegundos+ ' milisegundos...'), milisegundos);
+        }
+
+    </script>
+
+
+
+
+
+
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar" alt="Limpiar el Log">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Sincrónico): ... 
+    </span>
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>
