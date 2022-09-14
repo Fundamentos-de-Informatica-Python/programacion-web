@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer App: Keyboards Events</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+    <h1>WoW Site!</h1>
+    <!--
+        Programación Web - 03 - Javascript
+        Diapo 56: Eventos del Submit - Envio del Formulario
+    -->
+    <form id="formulario" action="wow-site-welcome.html">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+
+            <label for="usuario">Usuario: </label>
+            <input id="usuario" type="text">
+
+            <label for="password">Password: </label>
+            <input id="password" type="password">
+
+        
+
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+       
+
+
+    <hr>
+    
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Mouse): ... 
+    </span>
+
+    <!--
+        Ejemplo del Script
+        Diapo 57: Formularios Submit
+    -->
+    <script>
+        let myForm     = document.getElementById('formulario')
+        let usuario    = document.getElementById('usuario')
+        let password   = document.getElementById('password')
+
+        myForm.onsubmit = (e) => { validarFormulario(e) }
+        
+        function validarFormulario(e) {
+            
+            if (password.value == 'SuperSecret') {
+                doLog('Formulario enviardo..')
+            } else {
+                e.preventDefault(); // Para que no envie le formulario
+                alert('El usuario ' + usuario.value + ' no puede ingresar... porque no puso la clave SuperSecret')
+            }
+        }
+    </script>
+
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>
+

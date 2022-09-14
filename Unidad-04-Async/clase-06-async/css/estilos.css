@@ -1,0 +1,40 @@
+#areaMouse, #areaCasa{
+    margin: 3%;
+    padding: 10%;
+    width: 20%;
+    height: 40%;
+    background-color: aqua;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#myLog {
+    width: 80%;
+    height: 30%;
+    background-color: azure;
+}
+
+legend {
+    margin: 3%;
+    padding: 1%;
+    width: 40%;
+    background-color: greenyellow;
+}
+
+.icon {
+    width: 10%;
+    height: 10%;
+    padding-top: 10px;
+    padding-left: 50px;
+}
+
+
+fieldset label {
+    display: block;
+    margin: .5em 0 0 0;
+}
+
+fieldset button {
+    display: block;
+    margin-top: 20px;
+}

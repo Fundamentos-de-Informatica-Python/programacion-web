@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRacticando con el DOM</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/accessdom.js"></script>
+</head>
+<body>
+
+
+    <div id="app">
+        <div id="parrafo1">
+            Hola! Buenos días!!!
+        </div>
+
+        <ul>
+            <li class="pais">AR</li>
+            <li class="pais">UY</li>
+            <li class="pais">CL</li>
+        </ul>
+
+        <div>
+            <div>cONTENEDOR 1</div>
+            <div>cONTENEDOR 2</div>
+        </div>
+    </div>
+
+    <fieldset>
+        <legend>Prueba 1: </legend>
+        <label for="uno">Muestra todos los divs en la consola</label>
+        <button onclick="prueba1()">Prueba 1</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prueba 2: </legend>
+        <label for="uno">Muestra todos los elementos con "class=pais" en la consola</label>
+        <button onclick="prueba2()">Prueba 2</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prueba 3: </legend>
+        <label for="uno">Muestra todos los elementos del tag "DIV" en la consola</label>
+        <button onclick="prueba3()">Prueba 3</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prueba 4: </legend>
+        <label for="uno">Cambia el contenido (DOM) del primer párrafo</label>
+        <button onclick="prueba4('parrafo1')">Prueba 4</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>Prueba 5: </legend>
+        <label for="uno">Agrega dinámicamente una porcion del DOM, un nodo hijo</label>
+        <button onclick="prueba5()">Prueba 5</button>
+    </fieldset>
+
+</body>
+</html>

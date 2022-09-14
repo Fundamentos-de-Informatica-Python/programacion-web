@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer App: Mouse Events</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+    <!--
+        Programación Web - 03 - Javascript
+        Diapo 54: Eventos del Mouse
+    -->
+    <section>
+        
+        <legend id="areaMouse">Pasa el Mouse:</legend>
+
+        <button id="btnMain">Click</button>
+        
+        <legend id="areaCasa">Esta es mi Casa!</legend>
+
+    </section>
+
+    <hr>
+    
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar" alt="Limpiar el Log">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Mouse): ... 
+    </span>
+
+    <!--
+        Ejemplo del Script
+        Diapo 54: Eventos del Mouse
+    -->
+    <script>
+        let boton      = document.getElementById('btnMain')
+        let legend     = document.getElementById('areaMouse')
+        let casa       = document.getElementById('areaCasa')
+
+        boton.onclick      = () => { doLog('Hizo Click! ...') };
+        legend.onmousemove = () => { doLog('Movio el Mouse...') };
+
+        casa.onmouseenter = () => { doLog('Bienvenido a Casa!...') };
+        casa.onmouseleave = () => { doLog('No te vayas!!...') };
+    </script>
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>
+

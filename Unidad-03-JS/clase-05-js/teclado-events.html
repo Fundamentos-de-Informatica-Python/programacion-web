@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer App: Keyboards Events</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/scripts.js"></script>
+</head>
+<body>
+
+    <!--
+        Programación Web - 03 - Javascript
+        Diapo 55: Eventos del Teclado
+    -->
+    <form action="">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+
+            <label for="nombre">Nombre: </label>
+            <input id="nombre" type="text">
+
+            <label for="apellido">Apellido: </label>
+            <input id="apellido" type="text">
+
+            <label for="edad">Edad: </label>
+            <input id="edad" type="number">
+
+            <label for="tel">telefono: </label>
+            <input id="tel" type="text">
+
+            <label for="tel">País: </label>
+            <select name="pais" id="pais">
+                <option value="ARG">Argentina</option>
+                <option value="BRA">Brasil</option>
+                <option value="URU">Uruguay</option>
+                <option value="CHI">Chile</option>
+                <option value="BOL">Bolivia</option>
+                <option value="PAR">Paraguay</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+
+        </fieldset>
+    </form>
+       
+
+
+    <hr>
+    
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Mouse): ... 
+    </span>
+
+    <!--
+        Ejemplo del Script
+        Diapo 55: Eventos del Teclado
+        Diapo 56: Eventos del Cambio
+    -->
+    <script>
+        let nombre     = document.getElementById('nombre')
+        let apellido   = document.getElementById('apellido')
+        let edad       = document.getElementById('edad')
+        let tel        = document.getElementById('tel')
+        let pais       = document.getElementById('pais')
+
+
+        nombre.onkeyup     = () => { doLog('KeyUp! ...') };
+
+        apellido.onblur     = () => { doLog('Dejo el campo apellido...') };
+        apellido.onfocus    = () => { doLog('Ingreso al campo apellido...') };
+        
+        edad.onkeydown = () => { doLog('KeyDown...') };
+        edad.onkeyup   = () => { doLog('KeyUp...') };
+
+        tel.onchange   = () => { doLog('cambio el telefono...') };
+        pais.onchange  = () => { doLog('Seleccion un país..') };
+        
+    </script>
+
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>
+
