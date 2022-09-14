@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <a href="index.html">Volver</a>
+    <hr>
+
+
+    <!--
+        Diapositiva 13
+        Funciones como obejtos
+    -->
+    <script>
+        const mostrarV1 = function(params) {
+            console.log(params)
+        }
+
+        const mostrarV2 = (params) => {
+            console.log(params)
+        } 
+
+        const mostrarv3 = params => console.log(params)
+
+        mostrarV1('Hola V1')
+        mostrarV2('Hola V2')
+        mostrarV3('Hola V3')
+    </script>
+
+
+
+    <!--
+        Diapositiva 14
+        Funciones como parámetros
+    -->
+    <script>
+        const finalizar = () => console.log('Fin de la Función')
+
+        saludarD14(finalizar)
+
+        function saludarD14(f) {
+            console.log('Hola a Tod@s!')
+            f();
+        }
+    </script>
+
+
+    <!--
+        Diapositiva 15
+        Callback
+    -->
+    <script>
+        saludarD15(() => console.log('Fin de la Función'))
+
+        function saludarD15(f) {
+            console.log('Hola a Tod@s!')
+            f();
+        }
+    </script>
+
+
+    <!--
+        Diapositiva 16
+        Callback - ejemplo 2
+    -->
+    <script>
+        saludarD16((nombre) => console.log(`Hola ${nombre}!` ))
+
+        function saludarD16(f) {
+            console.log('Comienzo de la función...')
+            let nombre = 'Pepe';
+            f(nombre);
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar" alt="Limpiar el Log">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Sincrónico): ... 
+    </span>
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>

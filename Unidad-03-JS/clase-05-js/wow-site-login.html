@@ -10,19 +10,25 @@
 </head>
 <body>
 
+    <h1>WoW Site!</h1>
     <!--
         Programación Web - 03 - Javascript
-        Diapo 55: Eventos del Tecladp
+        Diapo 56: Eventos del Submit - Envio del Formulario
     -->
-    <form action="">
+    <form id="formulario" action="wow-site-welcome.html">
         <fieldset>
             <legend>Datos del Usuario</legend>
-            <label for="nombre">Nombre: </label>
-            <input id="nombre" type="text">
 
-            <br>
-            <label for="edad">Edad: </label>
-            <input id="edad"   type="number">
+            <label for="usuario">Usuario: </label>
+            <input id="usuario" type="text">
+
+            <label for="password">Password: </label>
+            <input id="password" type="password">
+
+        
+
+            <button type="submit">Enviar</button>
+
         </fieldset>
     </form>
        
@@ -40,20 +46,24 @@
 
     <!--
         Ejemplo del Script
-        Diapo 54: Eventos del Mouse
+        Diapo 57: Formularios Submit
     -->
     <script>
-        let nombre      = document.getElementById('nombre')
-        let edad     = document.getElementById('edad')
+        let myForm     = document.getElementById('formulario')
+        let usuario    = document.getElementById('usuario')
+        let password   = document.getElementById('password')
 
-
-
-        boton.onclick      = () => { doLog('Hizo Click! ...') };
-        legend.onmousemove = () => { doLog('Movio el Mouse...') };
-
-        casa.onmouseenter = () => { doLog('Bienvenido a Casa!...') };
-        casa.onmouseleave = () => { doLog('No te vayas!!...') };
+        myForm.onsubmit = (e) => { validarFormulario(e) }
         
+        function validarFormulario(e) {
+            
+            if (password.value == 'SuperSecret') {
+                doLog('Formulario enviardo..')
+            } else {
+                e.preventDefault(); // Para que no envie le formulario
+                alert('El usuario ' + usuario.value + ' no puede ingresar... porque no puso la clave SuperSecret')
+            }
+        }
     </script>
 
 

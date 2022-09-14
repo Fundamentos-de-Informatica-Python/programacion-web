@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    
+    <a href="index.html">Volver</a>
+    <hr>
+    <!--
+        Diapositiva 19
+        setIntervalo
+    -->
+
+
+
+    <script>
+        ts = () => {
+            return new Date().getSeconds()
+        } 
+        
+        console.log('Inicio del Programa', ts());
+        
+        setInterval(() => {
+                let nombre = 'Mariana';
+                console.log(`Hola ${nombre}! `, ts())
+            }, 3000)
+
+        console.log('Fin del Programa', ts());
+
+
+    </script>
+
+
+
+
+    <legend>Este es mi Log:  
+        <img src="img/icon-broom.png" class="icon" id="limpiar" alt="Limpiar el Log">
+    </legend> 
+              
+    <span id="myLog">
+        Salida (Ejemplo Sincrónico): ... 
+    </span>
+
+    <!-- My Log -->
+    <script>
+        let imgLimpiar = document.getElementById('limpiar')
+
+        doLog = (msg) => {
+            console.log(msg)
+            document.getElementById('myLog').append(msg)
+        }
+        imgLimpiar.onclick = () => {
+            document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
+        }
+    </script>
+
+    <hr>
+    <small>
+        <a href="https://www.flaticon.com/free-icons/clean" title="clean icons">Clean icons created by Smashicons - Flaticon</a>
+    </small>
+
+</body>
+</html>
