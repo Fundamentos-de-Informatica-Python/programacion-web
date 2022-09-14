@@ -13,16 +13,34 @@
     <a href="index.html">Volver</a>
     <hr>
     <!--
-        Diapositiva 18
-        Callback
+        Diapositiva 17
+        Callback - Algunas convenciones
     -->
-
-
-
     <script>
-        ts = () => {
-            return new Date().getSeconds()
-        } 
+        ejemploCallback = (error, resultado) => {
+            if (error) {
+                // Hacer algo con el error!
+            } else {
+                // Hacer algo con el resultado!
+            }
+        }
+    </script>
+
+
+    <!--
+        Diapositiva 19
+        Callback - Entendiendo el asincronismo
+    -->
+    <script>
+
+        function buscarNombre(f) {
+            setTimeout(() => {
+                let nombre = 'Mariana';
+                f(null, nombre)
+            }, 5000)
+        }
+        
+        ts = () => new Date().getSeconds()
         
         console.log('Inicio del Programa', ts());
         
@@ -36,13 +54,6 @@
 
         console.log('Fin del Programa', ts());
 
-        function buscarNombre(f) {
-            setTimeout(() => {
-                let nombre = 'Mariana';
-                f(null, nombre)
-            }, 5000)
-        }
-        
     </script>
 
 

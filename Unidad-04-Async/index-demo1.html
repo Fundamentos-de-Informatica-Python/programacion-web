@@ -17,17 +17,17 @@
         Diapositiva 9
     -->
 
-    <button id="btn1" onclick="funA()">Click Asincrónico</button>
-    <button id="btn2" onclick="testBloqueante()">Click Bloqueante</button>
-    <button id="btn3" onclick="testNoBlock()">Click No Bloqueante</button>
+ 
+    <button id="btn1" onclick="testBloqueante()">Click Bloqueante</button>
+    <button id="btn2" onclick="testNoBlock()">Click No Bloqueante</button>
 
     <script>
         function testBloqueante() {
 
-            console.log('iniciando')
+            doLog('iniciando')
             let dato = obtenerDatoSincrónico()
-            console.log('dato: ' + dato)
-            console.log('terminando')
+            doLog('dato: ' + dato)
+            doLog('terminando')
         }
         function obtenerDatoSincrónico() {
             mySleep(3000)  // 3ooo milisegundos
@@ -38,9 +38,9 @@
          * No Bloqueanotes
          */
          function testNoBlock() {
-            console.log('iniciando')
+            doLog('iniciando')
             let dato = myTimeout(1000)
-            console.log('terminando')
+            doLog('terminando')
          }
 
 
@@ -57,7 +57,7 @@
         }
 
         function myTimeout(milisegundos) {
-            console.log('Inicia un timeout...');
+            doLog('Inicia un timeout...');
             setTimeout(console.log.bind(null, 'Despues de ' + milisegundos+ ' milisegundos...'), milisegundos);
         }
 
@@ -82,7 +82,7 @@
 
         doLog = (msg) => {
             console.log(msg)
-            document.getElementById('myLog').append(msg)
+            document.getElementById('myLog').append(msg + " ... ")
         }
         imgLimpiar.onclick = () => {
             document.getElementById('myLog').innerHTML = 'Salida de Log (Ejemplo Mouse): ... '
@@ -96,3 +96,4 @@
 
 </body>
 </html>
+

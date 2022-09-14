@@ -12,13 +12,12 @@
     
     <a href="index.html">Volver</a>
     <hr>
+
+
     <!--
-        Diapositiva 13 de 19
-        async
+        Diapositiva 13
+        Funciones como obejtos
     -->
-
-
-
     <script>
         const mostrarV1 = function(params) {
             console.log(params)
@@ -39,14 +38,28 @@
 
     <!--
         Diapositiva 14
+        Funciones como parámetros
     -->
-
     <script>
         const finalizar = () => console.log('Fin de la Función')
 
-        saludar(finalizar)
+        saludarD14(finalizar)
 
-        function saludar(f) {
+        function saludarD14(f) {
+            console.log('Hola a Tod@s!')
+            f();
+        }
+    </script>
+
+
+    <!--
+        Diapositiva 15
+        Callback
+    -->
+    <script>
+        saludarD15(() => console.log('Fin de la Función'))
+
+        function saludarD15(f) {
             console.log('Hola a Tod@s!')
             f();
         }
@@ -55,31 +68,14 @@
 
     <!--
         Diapositiva 16
-    -->
-
-    <script>
-        saludarV2(() => console.log('Fin de la Función Anónima'))
-
-        function saludarV2(f) {
-            console.log('Hola a Tod@s!')
-            f();
-        }
-    </script>
-
-
-
-
-
-
-    <!--
-        Diapositiva 17
+        Callback - ejemplo 2
     -->
     <script>
-        saludarV3((nombre) => console.log('Hola ${nombre}'))
+        saludarD16((nombre) => console.log(`Hola ${nombre}!` ))
 
-        function saludarV3(f) {
-            console.log('Hola a Tod@s!')
-            let nombre = 'Pedro'
+        function saludarD16(f) {
+            console.log('Comienzo de la función...')
+            let nombre = 'Pepe';
             f(nombre);
         }
     </script>
@@ -88,18 +84,10 @@
 
 
 
-    <!--
-        Diapositiva 18
-    -->
-    <script>
-        ejemploCallback = (error, resultado) => {
-            if (error) {
-                // Hacer algo con el error!
-            } else {
-                // Hacer algo con el resultado!
-            }
-        }
-    </script>
+
+
+
+
 
 
 
