@@ -40,13 +40,14 @@
     -->
 
     <script>
-        const finalizar = () => console.log('Fin de la Función')
+        
 
-        saludar(finalizar)
+        saludar(() => console.log('Fin de la Función'))
 
         function saludar(f) {
             console.log('Hola a Tod@s!')
             f();
+            console.log('y la funcion???')
         }
     </script>
 
@@ -56,7 +57,12 @@
     -->
 
     <script>
-        saludarV2(() => console.log('Fin de la Función Anónima'))
+        saludarV2(
+            () => {
+                console.log('Fin de la Función Anónima Linmea1 ')
+                console.log('Fin de la Función Anónima linea 2')
+            }
+        )
 
         function saludarV2(f) {
             console.log('Hola a Tod@s!')
@@ -73,7 +79,7 @@
         Diapositiva 17
     -->
     <script>
-        saludarV3((nombre) => console.log('Hola ${nombre}'))
+        saludarV3((nombre) => console.log(`Hola ${nombre}`))
 
         function saludarV3(f) {
             console.log('Hola a Tod@s!')
