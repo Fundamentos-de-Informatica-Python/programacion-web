@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos-home.css">
+    <title>Unidad 06 Promesas</title>
+</head>
+<body>
+    <h1>Unidad 06 - Promesas vs CallBack</h1>
+    
+    <script>
+
+        new Promise(
+            function (resolve, reject) {
+                setTimeout(() => resolve(1), 1000);
+            })
+            .then(result => {
+                console.log("Log Promesa A: " + result);
+                return result * 2;
+            })
+            .then(result => {
+                console.log("Log Promesa B: " + result);
+                return result * 2;
+            })
+            .then(result => {
+                console.log("Log Promesa C: " + result);
+                return result * 2;
+                // reject("chau")
+            })
+            .then(result => {
+                console.log("Log Promesa D: " + result);
+                return result * 2;
+            })
+
+        // 1) La promesa inicial se resuelve en 1 segundo(*)
+        // 2) Entonces se llama al controlador .then en (**)
+        // 3) El valor que devuelve 
+        //             se pasa al siguiente controlador .then (***) 
+
+
+
+    </script>
+</body>
+</html>
