@@ -41,14 +41,14 @@
 
     <script>
         
-
-        saludar(() => console.log('Fin de la Función'))
-
         function saludar(f) {
             console.log('Hola a Tod@s!')
             f();
             console.log('y la funcion???')
         }
+
+        saludar(() => console.log('Fin de la Función'))
+
     </script>
 
 
@@ -57,17 +57,17 @@
     -->
 
     <script>
+        function saludarV2(f) {
+            console.log('Hola a Tod@s!')
+            f();
+        }
+
         saludarV2(
             () => {
                 console.log('Fin de la Función Anónima Linmea1 ')
                 console.log('Fin de la Función Anónima linea 2')
             }
         )
-
-        function saludarV2(f) {
-            console.log('Hola a Tod@s!')
-            f();
-        }
     </script>
 
 
