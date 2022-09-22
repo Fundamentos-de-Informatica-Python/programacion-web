@@ -17,7 +17,8 @@ var appVue2 = new Vue({
         ],
         contador: 0,
         x: 0,
-        y: 0
+        y: 0,
+        saludo: ''
     },
     methods: {
         mostrarMensaje: function() {
@@ -32,6 +33,9 @@ var appVue2 = new Vue({
         mover: function(e) {
             this.x = e.clientX;
             this.y = e.clientY;
+        },
+        saludar: function() {
+            this.saludo = "¡¡¡Hola " + this.nombre + " !!!"
         }
     }
 })

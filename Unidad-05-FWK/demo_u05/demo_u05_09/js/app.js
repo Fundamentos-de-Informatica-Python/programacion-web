@@ -1,7 +1,7 @@
 var appVue2 = new Vue({
     el: '#app',
     data: {
-        mensaje: 'Clicos Iterativos V-FOR',
+        mensaje: 'Eventos y Métodos con Parámetros V-ON',
         nombre: 'Carlitos',
         miImagen: 'img/Vue.js_Logo_2.svg',
         myvalor: '<h1>Hola Mundo!</h1>',
@@ -15,10 +15,17 @@ var appVue2 = new Vue({
             { nombre: 'Huracán', posicion:5, puntos: 20 },
             { nombre: 'Boca', posicion:6, puntos: 3 }
         ],
+        contador: 0,
     },
     methods: {
         mostrarMensaje: function() {
             return 'Demo  u05: ' + this.mensaje ;
+        },
+        sumar: function(inc) {
+            this.contador += inc
+        },
+        restar: function(dec) {
+            this.contador -= dec
         }
     }
 })
