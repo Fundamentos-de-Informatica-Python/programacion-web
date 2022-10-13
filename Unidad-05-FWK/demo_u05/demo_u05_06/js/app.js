@@ -10,6 +10,9 @@ var appVue2 = new Vue({
     methods: {
         mostrarMensaje: function() {
             return 'Demo  u05: ' + this.mensaje ;
+        },
+        cambiar: function() {
+            this.mostrar = !this.mostrar
         }
     }
 })
