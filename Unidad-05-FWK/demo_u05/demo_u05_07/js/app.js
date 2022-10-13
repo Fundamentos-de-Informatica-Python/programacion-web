@@ -6,7 +6,7 @@ var appVue2 = new Vue({
         miImagen: 'img/Vue.js_Logo_2.svg',
         myvalor: '<h1>Hola Mundo!</h1>',
         mostrar: true,
-        equipos: ['River', 'Boca', 'Independiente', 'Racing', 'San Lorenzo']
+        equipos: ['Boca', 'River',  'Independiente', 'Racing', 'San Lorenzo']
     },
     methods: {
         mostrarMensaje: function() {
