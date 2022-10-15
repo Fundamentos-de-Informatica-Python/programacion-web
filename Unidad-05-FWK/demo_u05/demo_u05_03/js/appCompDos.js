@@ -1,5 +1,5 @@
 var appVue2 = new Vue({
-    el: '#app',
+    el: '#appCompDos',
     data: {
         mensaje: 'Hola Mundo!',
         nombre: 'Carlitos'
@@ -10,7 +10,4 @@ var appVue2 = new Vue({
         }
     }
 })
-
-
-
 

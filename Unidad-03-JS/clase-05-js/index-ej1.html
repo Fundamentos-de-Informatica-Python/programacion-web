@@ -29,13 +29,13 @@
     -->
     <script>
         let boton = document.getElementById('btnPrincipal')
-
-        boton.addEventListener("click", respuestaClick)
         
         function respuestaClick() {
             console.log('Respuesta al evento "Click"')
             document.getElementById('myLog').append('hizo clicl! ... ')
         }
+        boton.addEventListener("click", respuestaClick)
+        
     </script>
 
 </body>

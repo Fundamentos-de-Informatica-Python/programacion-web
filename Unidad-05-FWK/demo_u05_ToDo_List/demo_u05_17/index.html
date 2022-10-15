@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    
+    
     <!-- Diapositiva 21
          Demo u05 - 17
          Se utiliza vue@2.0.3
@@ -26,20 +28,38 @@
               v-model="nuevaTarea"
               @keyup.enter="agregarTarea()">
 
-       <a href="#" @click="agregarTarea()">Agregar</a>
+        <a href="#" @click="agregarTarea()">Agregar</a>
+        <hr>
+        <span :class="{tachada: true}">
+            Nuestra nueva tarea será: <b>{{ nuevaTarea }}</b>
+        </span>
+
+        <hr>
+
        
-        <ul v-for="(tarea, indice) in tareas">
+        <ul v-for="(t, indice) in mistareas">
             <li>
-                <div :class="{tachada: tarea.terminada}">
-                    {{tarea.nombre}} 
+                <div :class="{tachada: t.terminada}">
+                {{ indice}} - {{t.nombre}} 
                 </div>
-                <a href="#" @click="tarea.terminada=!tarea.terminada">Terminada</a>
+                <a href="#" @click="t.terminada=!t.terminada">Terminada</a>
                 <a href="#" @click="eliminarTarea(indice)">Eliminar</a>
+                <a href="#" @click="editarTarea(indice, 'Cambiar el Nombre')">Editar</a>
             </li>
         </ul>
+
+        <hr>
+        {{ titulo }} | Comsión "B" @ 2021
     </div>
 
     <script src="js/app.js"></script>
     
+    
+    <!--
+        <div id=#app2>
+    
+        </div>
+        <script src="js/app2.js"></script>
+    -->
 </body>
 </html>

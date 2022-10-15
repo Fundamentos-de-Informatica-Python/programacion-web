@@ -1,11 +1,12 @@
 var appVue2 = new Vue({
     el: '#app',
     data: {
-        titulo: 'Lista de Tareas',
-        tareas: [
+        titulo: 'Listado',
+        mistareas: [
             { nombre: 'Aprender HTML', terminada: false},
             { nombre: 'Aprender CSS', terminada: false},
-            { nombre: 'Aprender Javascript', terminada: false}
+            { nombre: 'Aprender Javascript', terminada: false},
+            { nombre: 'Dormir!', terminada: true}
         ],
         nuevaTarea: ''
     },
@@ -16,13 +17,15 @@ var appVue2 = new Vue({
                         nombre: this.nuevaTarea,
                         terminada: false
                     }
-                this.tareas.push(tarea);
+                this.mistareas.push(tarea);
                 this.nuevaTarea = ''
             }
         },
         eliminarTarea: function(indiceTarea) {
-            this.tareas.splice(indiceTarea, 1)
+            this.mistareas.splice(indiceTarea, 1)
+        },
+        editarTarea: function(indice, textoEditar) {
+            this.mistareas[indice].nombre =  this.nuevaTarea
         }
     }
 })
-

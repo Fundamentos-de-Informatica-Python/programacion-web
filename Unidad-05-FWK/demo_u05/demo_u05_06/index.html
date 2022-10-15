@@ -16,6 +16,10 @@
     <div id="app">
         {{ mostrarMensaje() }}
         <hr>
+        Mostrar: 
+        <a href="#" @click="cambiar()">Cambiar</a>
+      
+        <hr>
         <div v-if="mostrar">
             Este es el primer Div
         </div>
