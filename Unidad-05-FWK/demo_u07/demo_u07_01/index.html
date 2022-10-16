@@ -4,25 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo u6.15 - Web Components</title>
+    <title>Demo u7.01 - Router Vue</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
-    <h1>Web Components</h1>
-    <h2>Demo unidad 06.15</h2>
-
-    <hr>
-    
-    <div id="web-components">
-        <alert-box>
-            <h2>Mensaje de Error</h2>
-            <button>Aceptar</button>
-        </alert-box>
+    <h1>Bienvenidos a Vue Router!</h1>
+    <div>
+        <p>
+            <router-link to="/inicio">Inicio</router-link>
+            <router-link to="/articulos">articulos</router-link>
+            <router-link to="/compras">compras</router-link>
+        </p>
     </div>
-    
-
-    <script src="js/webcomp-alert-box.js"></script>
+    <router-view></router-view>
 </body>
 </html>
