@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo u6.16 - Programacion Web</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
@@ -15,10 +16,14 @@
     <hr>
     
     <div id="web-components">
-        <boton-web titulo="Bienvenidos a Tod@s!"></boton-web>
-        <boton-web titulo="Hola! Soy otro Componente"></boton-web>
-        <boton-web></boton-web>
-        <boton-web titulo="Y yo otro más!"></boton-web>
+        <alert-box>
+            <div slot="mensaje">
+                <h2>Mensaje de Error</h2>
+            </div>
+            <div slot="boton">
+                <button>Aceptar</button>
+            </div>
+        </alert-box>
     </div>
     
 
