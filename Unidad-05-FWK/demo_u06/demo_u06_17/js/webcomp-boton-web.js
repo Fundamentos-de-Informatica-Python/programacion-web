@@ -1,25 +1,16 @@
-Vue.component('boton-web', {
-    data: function() {
-        return {
-            cantidad: 8,
-            tituloGral: 'Hola a todos'
-        }
-    },
-    methods: {
-        incrementar: function() {
-            this.cantidad++
-        }
-    },
-    props: { 
-        'titulo': {
-            default: 'Holaaaaa!'   
-        }
-    },
+Vue.component('alert-box', {
     template: `
-        <div>
-            <h1> {{tituloGral}} </h1>
-            <button v-on:click="incrementar">{{titulo}} |--| Hiciste {{cantidad}} de Clicks
-            </button>
+        <div class="demo-alert-box">
+            
+            <br>
+            <strong>Error!</strong>
+            <slot name="mensaje"></slot>
+            <slot name="boton"></slot>
+
+            <br>
+            <slot></slot>
+            <hr>
+            
         </div>
     `
 })
