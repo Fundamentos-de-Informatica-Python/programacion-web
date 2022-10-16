@@ -1,20 +1,27 @@
-Vue.component('alert-box', {
-    template: `
-        <div class="demo-alert-box">
-            
-            <br>
-            <strong>Error!</strong>
-            <slot name="mensaje"></slot>
-            <slot name="boton"></slot>
+const Inicio = {
+    template: '<div>Estoy en el Inicio</div>'
+}
 
-            <br>
-            <slot></slot>
-            <hr>
-            
-        </div>
-    `
+const Articulos = {
+    template: '<div>Estoy en la Lista de Articulos</div>'
+}
+
+const Compras = {
+    template: '<div>Estoy en el Comprando</div>'
+}
+
+const routes = [
+    { path: '/inicio',    component: Inicio  },
+    { path: '/articulos', component: Articulos },
+    { path: '/compras',   component: Compras }
+]
+
+const router = new VueRouter({
+    routes
 })
-new Vue({
-    el: '#web-components'
+
+const app = new Vue({
+    router,
+    el: '#app'
 })
 
