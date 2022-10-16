@@ -5,8 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Demo u7.01 - Router Vue</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.3/vue.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <h1>Bienvenidos a Vue Router!</h1>
+    <div>
+        <p>
+            <router-link to="/inicio">Inicio</router-link>
+            <router-link to="/articulos">articulos</router-link>
+            <router-link to="/compras">compras</router-link>
+        </p>
+    </div>
+    <router-view></router-view>
 </body>
 </html>
