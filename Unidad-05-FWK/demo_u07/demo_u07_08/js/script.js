@@ -25,24 +25,33 @@ const NotFound = { template: `
         </div>`
 }
 
-const Carrito  = { template: '<div>Aqui mostramos el carrito de compras</div>' }
+
+const Carrito = { template: '<div>Aqui mostramos el carrito de compras</div>' }
 const Submitir = { template: '<div>Aqui ponemos el boton de comprar</div>' }
 
-const DetalleArticulo = { template: '<p class="style: blue">Detalle del Articulo</p>' }
-const ComprarArticulo = { template: '<p class="style: blue">Aqui compramos el Articulo</p>' }
-
+const DetalleArticulo = { template: '<p class="style: red">Detalle del Articulo</p>' }
+const ComprarArticulo = { template: '<p class="style: red">Aqui compramos el Articulo</p>' }
 
 const routes = [
     { path: '/inicio',         component: Inicio    },
-    { path: '/compras',        component: Compras    },
-    { path: '/articulos',      component: Articulos },
+    { path: '/articulos',      components: {
+            default: Articulos,
+            sumitir: Submitir
+        }
+    },
+    { path: '/compras',        components: {
+            default: Compras,
+            carrito: Carrito,
+            submitir: Submitir
+        }   
+    },
     { path: '/articulos/:id',  component: Articulo, 
             children: [
                 {   path: 'detalles',component: DetalleArticulo },
                 {   path: 'comprar', component: ComprarArticulo }
             ]
     },
-    { path: '/*',   component: NotFound  },
+    { path: '/*',              component: NotFound  },
 ]
 
 const router = new VueRouter({
