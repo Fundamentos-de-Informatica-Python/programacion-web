@@ -15,10 +15,14 @@
     <hr>
     
     <div id="web-components">
-        <boton-web titulo="Bienvenidos a Tod@s!"></boton-web>
-        <boton-web titulo="Hola! Soy otro Componente"></boton-web>
+        <boton-web titulo="Bienvenidos a Tod@s!"      v-on:incre="totalClicks++"></boton-web>
+        <boton-web titulo="Hola! Soy otro Componente" v-on:incre="totalClicks++"></boton-web>
         <boton-web></boton-web>
-        <boton-web titulo="Y yo otro más!"></boton-web>
+        <boton-web titulo="Y yo otro más!" v-on:incre=""></boton-web>
+        <br>
+        <strong>
+            totalClicks {{totalClicks}}
+        </strong>
     </div>
     
 
