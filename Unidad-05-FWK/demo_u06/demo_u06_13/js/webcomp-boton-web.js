@@ -1,12 +1,13 @@
 Vue.component('boton-web', {
     data: function() {
         return {
-            cantidad: 8,
+            cantidad: 12,
             tituloGral: 'Hola a todos'
         }
     },
     methods: {
         incrementar: function() {
+            this.$emit('incre', 2),
             this.cantidad++
         }
     },
@@ -24,6 +25,9 @@ Vue.component('boton-web', {
     `
 })
 new Vue({
-    el: '#web-components'
+    el: '#web-components',
+    data: {
+        totalClicks: 0
+    }
 })
 
