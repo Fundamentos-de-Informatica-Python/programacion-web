@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo u7.10 - Router Vue</title>
+    <script src="https://unpkg.com/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-router@3/dist/vue-router.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Web Components</h1>
+    <h2>Demo unidad 07.10</h2>
+    <hr>
+    <h1>Bienvenidos a Vue Router!</h1>
+    <div id="app">
+        <p>
+            <router-link to="/inicio">Inicio</router-link>
+            <router-link to="/articulos?marca=ford&tipo=usado">Articulos</router-link>
+            <router-link to="/compras">Compras</router-link>
+            <router-link to="/cualquiera">cualquiera</router-link>
+            <br>
+            <br>
+            <br>
+            <a href="#" @click="irAtras">Atras</a> |
+            <a href="#" @click="irAdelante">Adelante</a> |
+            <a href="#" @click="irCompras">Ir a Compras</a>
+            
+        </p>
+        <router-view></router-view>
+        <router-view name="carrito"></router-view>
+        <router-view name="sumitir"></router-view>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
