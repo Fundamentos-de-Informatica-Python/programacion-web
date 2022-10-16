@@ -4,7 +4,7 @@ Vue.component('boton-web', {
             cantidad: 10
         }
     },
-    template: '<button>Mi boton! Hicist {{cantidad}} de Clicks</button>'
+    template: '<button>Mi boton! Hiciste {{cantidad}} de Clicks</button>'
 })
 new Vue({
     el: '#web-components'

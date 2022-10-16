@@ -1,7 +1,8 @@
 Vue.component('boton-web', {
     data: function() {
         return {
-            cantidad: 5
+            cantidad: 5,
+            tituloGral: 'Hola a todos'
         }
     },
     methods: {
@@ -10,7 +11,11 @@ Vue.component('boton-web', {
         }
     },
     props: [ 'titulo' ],
-    template: '<button v-on:click="incrementar">{{titulo}} |--| Hiciste {{cantidad}} de Clicks</button>'
+    template: `
+        <h1> {{tituloGral}} </h1>
+        <button v-on:click="incrementar">{{titulo}} |--| Hiciste {{cantidad}} de Clicks
+        </button>
+    `
 })
 new Vue({
     el: '#web-components'

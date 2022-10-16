@@ -9,7 +9,7 @@ Vue.component('boton-web', {
             this.cantidad++
         }
     },
-    template: '<button v-on:click="incrementar">Mi boton! Hicist {{cantidad}} de Clicks</button>'
+    template: '<button v-on:click="incrementar">Mi boton! Hiciste {{cantidad}} de Clicks</button>'
 })
 new Vue({
     el: '#web-components'
