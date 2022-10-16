@@ -1,13 +1,12 @@
 var appVue2 = new Vue({
     el: '#app',
     data: {
-        mensaje: 'Demo: Interpolación mediante computed properties',
         peras: 100,
-        precio: 20
+        texto: ''
     },
-    computed: {
-        valorTotal: function() {
-            return this.peras * this.precio
+    watch: {
+        peras: function(newPeras, oldPeras) {
+            this.texto = `Tenia ${ oldPeras} y ahora tengo ${newPeras}`
         }
     },
     methods: {
@@ -16,3 +15,4 @@ var appVue2 = new Vue({
         }
     }
 })
+
