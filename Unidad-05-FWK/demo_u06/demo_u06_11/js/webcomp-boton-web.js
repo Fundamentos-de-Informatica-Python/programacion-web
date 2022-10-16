@@ -12,7 +12,8 @@ Vue.component('boton-web', {
     },
     props: { 
         'titulo': {
-            default: 'Holaaaaa!'   
+            type: String,
+            required: true   
         }
     },
     template: `
