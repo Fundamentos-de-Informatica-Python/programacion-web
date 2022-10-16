@@ -1,7 +1,7 @@
 Vue.component('boton-web', {
     data: function() {
         return {
-            cantidad: 5
+            cantidad: 6
         }
     },
     methods: {
