@@ -2,8 +2,12 @@ Vue.component('alert-box', {
     template: `
         <div class="demo-alert-box">
             <strong>Error!</strong>
-            <slot></slot>
-        </div>
+            <ul>
+                <li><slot></slot>
+                <li><slot></slot>
+                <li><slot></slot>
+            </ul>
+            </div>
     `
 })
 new Vue({

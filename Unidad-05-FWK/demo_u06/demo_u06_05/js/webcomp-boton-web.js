@@ -7,9 +7,18 @@ Vue.component('boton-web', {
     methods: {
         incrementar: function() {
             this.cantidad++
+        },
+        decrementar: function() {
+            this.cantidad = this.cantidad - 1
         }
     },
-    template: '<button v-on:click="incrementar">Mi boton! Hiciste {{cantidad}} de Clicks</button>'
+    template: `
+    <div>
+        <button v-on:click="incrementar">Mi boton!! Hiciste {{cantidad}} de Clicks</button>
+        <button v-on:click="decrementar">decrementar</button>        
+    </div>
+
+    `
 })
 new Vue({
     el: '#web-components'
