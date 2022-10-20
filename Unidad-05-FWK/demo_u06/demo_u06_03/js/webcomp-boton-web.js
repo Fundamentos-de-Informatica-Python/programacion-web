@@ -4,7 +4,12 @@ Vue.component('boton-web', {
             cantidad: 10
         }
     },
-    template: '<button v-on:click="cantidad++">Mi boton! Hiciste {{cantidad}} de Clicks</button>'
+    template: `<div>
+            <button v-on:click="cantidad++">Mi boton! Hiciste {{cantidad}} de Clicks -</button>
+            <br>
+            <button v-on:click="cantidad--">restar</button>
+        </div>
+        `
 })
 new Vue({
     el: '#web-components'
