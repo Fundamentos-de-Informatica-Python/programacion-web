@@ -7,13 +7,14 @@ Vue.component('boton-web', {
     },
     methods: {
         incrementar: function() {
-            this.$emit('incre'),
-            this.cantidad++
+            this.$emit('mamaaaaaa'),
+            this.cantidad = this.cantidad + 1
+            // this.cantidad++
         }
     },
     props: { 
         'titulo': {
-            default: 'Holaaaaa!'   
+            default: 'Hijo!!!'   
         }
     },
     template: `
@@ -27,7 +28,7 @@ Vue.component('boton-web', {
 new Vue({
     el: '#web-components',
     data: {
-        totalClicks: 0
+        importancia: 1
     }
 })
 

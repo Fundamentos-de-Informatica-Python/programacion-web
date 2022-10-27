@@ -15,13 +15,17 @@
     <hr>
     
     <div id="web-components">
-        <boton-web titulo="Bienvenidos a Tod@s!"      v-on:incre="totalClicks++"></boton-web>
-        <boton-web titulo="Hola! Soy otro Componente" v-on:incre="totalClicks++"></boton-web>
+        <boton-web titulo="Ana!"    v-on:mamaaaaaa="importancia = importancia + 5"></boton-web>
+        
+        <boton-web titulo="Valentino"></boton-web>
+        
         <boton-web></boton-web>
-        <boton-web titulo="Y yo otro más!" v-on:incre=""></boton-web>
+        
+        <boton-web titulo="Dolores" v-on:mamaaaaaa="importancia++"></boton-web>
         <br>
+        
         <strong>
-            totalClicks {{totalClicks}}
+            importancia {{importancia}}
         </strong>
     </div>
     
