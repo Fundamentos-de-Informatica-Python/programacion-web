@@ -7,7 +7,7 @@ Vue.component('boton-web', {
     },
     methods: {
         incrementar: function() {
-            this.$emit('mamaaaaaa'),
+            this.$emit('mamaaaaaa', 30),
             this.cantidad = this.cantidad + 1
             // this.cantidad++
         }
