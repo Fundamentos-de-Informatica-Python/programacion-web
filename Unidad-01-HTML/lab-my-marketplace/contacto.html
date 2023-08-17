@@ -56,6 +56,38 @@
           <input type="date" name="fechanac" id="fechanac" tabindex="5" max="2022-12-31">
         </fieldset>
 
+
+        <fieldset>
+          <legend>Forma de Pago y Entrega</legend>
+
+          <label for="tipopago">Tipo Pago</label>
+          <input type="radio" name="tl">Debito
+          <input type="radio" name="tl">Credit
+
+          <br>
+          <label for="tarjeta">Tarjeta:</label>
+          <select name="tarjeta" id="">
+            <option value="amex">Amex</option>
+            <option value="visa">Visa</option>
+            <option value="Master">Master</option>
+          </select>
+
+          <br>
+          <label for="entrega">Entrega</label>
+          <input type="checkbox" name="dia" value="Lunes">lunes
+          <input type="checkbox" name="dia" value="Martes">Marte
+          <input type="checkbox" name="dia" value="Miercoles">Miercoles
+          <input type="checkbox" name="dia" value="Jueves">Jueves
+          <input type="checkbox" name="dia" value="Viernes">Viernes
+          
+          
+          <br>
+          <label for="comentario">Comentarios</label>
+          <textarea name="comentario" id="" cols="30" rows="10">
+
+          </textarea>
+
+        </fieldset>
       </form>
 
     </section>
