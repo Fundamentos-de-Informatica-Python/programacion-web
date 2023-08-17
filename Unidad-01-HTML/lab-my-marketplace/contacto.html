@@ -32,16 +32,21 @@
 
     <section>
 
-      <form action="">
+      <form action="mailto:maria@gmail.com">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" tabindex="1">
+
         <fieldset>
           <legend>Datos Personales</legend>
 
           <label for="nombre">Nombre:</label>
-          <input type="text" name="nombre" tabindex="1">
+          <input type="text" placeholder="Ingrese su nombre" name="nombre" maxlength="20" tabindex="1">
 
+          
           <br>
           <label for="apellido">Apellido:</label>
-          <input type="text" name="apellido" tabindex="2">
+          <input type="text" name="apellido" required tabindex="2">
 
           <br>
           <label for="tel">Telefono:</label>
@@ -60,18 +65,23 @@
         <fieldset>
           <legend>Forma de Pago y Entrega</legend>
 
-          <label for="tipopago">Tipo Pago</label>
-          <input type="radio" name="tl">Debito
-          <input type="radio" name="tl">Credit
-
+          
+          <br>
+          <label for="precio">Precio</label>
+          <input type="number" min="0" max="1000" step="0.01">
           <br>
           <label for="tarjeta">Tarjeta:</label>
           <select name="tarjeta" id="">
             <option value="amex">Amex</option>
-            <option value="visa">Visa</option>
+            <option value="visa" selected>Visa</option>
             <option value="Master">Master</option>
           </select>
-
+          
+          <br>
+          <label for="tipopago">Tipo Pago</label>
+          <input type="radio" name="tipop">Debito
+          <input type="radio" name="tipop">Credit
+          
           <br>
           <label for="entrega">Entrega</label>
           <input type="checkbox" name="dia" value="Lunes">lunes
@@ -83,11 +93,14 @@
           
           <br>
           <label for="comentario">Comentarios</label>
-          <textarea name="comentario" id="" cols="30" rows="10">
+          <textarea name="comentario" id="" 
+          cols="15" rows="10" maxlength="255">
 
           </textarea>
 
         </fieldset>
+
+        <input type="submit" value="Enviar">
       </form>
 
     </section>
