@@ -4,23 +4,138 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+
 </head>
 <body>
-    <h1>My Marketplace</h1>
+    
+    <header>
+      <h1>My Marketplace</h1>
+    </header>
 
-    <h2>Contactos</h2>
+    <nav>
+      <hr>
+          <a href="perfil.html">Perfil</a>
+        | <a href="compras.html">Mis Compras</a>
+        | <a href="Contacto.html">Contacto</a>
+        | <a href="marketplace.html">Productos</a>
+      <hr>
+    </nav>
 
-    <p>Bienvenidos y bienvenidas a la seccion  del Contactos</p>
+    <main>
+      <h2>Contactos</h2>
 
-    <p>Esta es la seccion de contactos por favor escribinos!!</p>
+      <p>Bienvenidos y bienvenidas a la seccion  del Contactos</p>
+  
+      <p>Esta es la seccion de contactos por favor escribinos!!</p>
+    </main>
+
+    <section>
+
+      <form action="mailto:maria@gmail.com">
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" tabindex="1">
+
+        <fieldset>
+          <legend>Datos Personales</legend>
+
+          <label for="nombre">Nombre:</label>
+          <input type="text" placeholder="Ingrese su nombre" name="nombre" maxlength="20" tabindex="1">
+
+          
+          <br>
+          <label for="apellido">Apellido:</label>
+          <input type="text" name="apellido" required tabindex="2">
+
+          <br>
+          <label for="tel">Telefono:</label>
+          <input type="number" name="tel" tabindex="3">
+
+          <br>
+          <label for="mail">Mail:</label>
+          <input type="email" name="mail" tabindex="4">
+
+          <br>
+          <label for="fechanac">Fecha Nacimiento</label>
+          <input type="date" name="fechanac" id="fechanac" tabindex="5" max="2022-12-31">
+        </fieldset>
 
 
-    <hr>
+        <fieldset>
+          <legend>Forma de Pago y Entrega</legend>
 
-    <a href="perfil.html">Perfil</a>
-  | <a href="compras.html">Mis Compras</a>
-  | <a href="Contacto.html">Contacto</a>
-  | <a href="marketplace.html">Productos</a>
-        
-    <hr>
-</body>
+          
+          <br>
+          <label for="precio">Precio</label>
+          <input type="number" min="0" max="1000" step="0.01">
+          <br>
+          <label for="tarjeta">Tarjeta:</label>
+          <select name="tarjeta" id="">
+            <option value="amex">Amex</option>
+            <option value="visa" selected>Visa</option>
+            <option value="Master">Master</option>
+          </select>
+          
+          <br>
+          <label for="tipopago">Tipo Pago</label>
+          <input type="radio" name="tipop">Debito
+          <input type="radio" name="tipop">Credit
+          
+          <br>
+          <label for="entrega">Entrega</label>
+          <input type="checkbox" name="dia" value="Lunes">lunes
+          <input type="checkbox" name="dia" value="Martes">Marte
+          <input type="checkbox" name="dia" value="Miercoles">Miercoles
+          <input type="checkbox" name="dia" value="Jueves">Jueves
+          <input type="checkbox" name="dia" value="Viernes">Viernes
+          
+          
+          <br>
+          <label for="comentario">Comentarios</label>
+          <textarea name="comentario" id="" 
+          cols="15" rows="10" maxlength="255">
+
+          </textarea>
+
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+      </form>
+
+    </section>
+
+    <aside>
+      a la izquierda
+    </aside>
+
+    <footer>
+      <!-- Mis Redes Sociales -->
+      <a href="https://www.instagram.com/drops_ba/?hl=es-la" target="_blank" >
+        instragram
+      </a> | 
+      <a href="https://www.facebook.com/dropsba/" target="facebook" >
+        facebook
+      </a> |
+      <a href="https://twitter.com/balldropcom?lang=es" target="twitter" >
+        twitter
+      </a>
+    </footer>
+
+
+    <script>
+      var today = new Date();
+      var dd = today.getDate();
+      var mm = today.getMonth()+1; //January is 0!
+      var yyyy = today.getFullYear();
+      if(dd<10){
+        dd='0'+dd
+      } 
+      if(mm<10){
+        mm='0'+mm
+      } 
+
+      today = yyyy+'-'+mm+'-'+dd;
+      document.getElementById("fechanac").setAttribute("max", today);
+  </script>
+  </body>

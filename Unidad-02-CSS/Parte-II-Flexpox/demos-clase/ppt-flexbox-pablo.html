@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pablo Flexbox</title>
+
+    <style>
+        .contenedor {
+            width:  500px;
+            height: 200px;
+            background: white;
+            padding: 10px;
+            border: 1px solid aqua;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+        }
+
+        .elemento {
+            color: white;
+            margin: 5px;
+
+            flex-basis: 100px;
+            
+
+            background: magenta;
+            text-align: center;
+        }
+
+        .elemento2 {
+            color: white;
+            margin: 5px;
+
+            flex-basis: 100px;
+            font-size: 30px;
+
+            background: magenta;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="contenedor">
+            <div class="elemento">1</div>
+            <div class="elemento2">2</div>
+            <div class="elemento">3</div>
+            <div class="elemento">4</div>
+        </div>
+    </div>
+</body>
+</html>
