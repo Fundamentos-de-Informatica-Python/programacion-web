@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+    <script>
+        monto = 50
+        while (monto < 1000) {
+            console.log(monto)
+            monto +=  300
+        }
+        console.log("termine el while" + monto)
+
+        console.log("empiezo el for")
+
+        for (var i=0; i<10; i++) {
+            var j = i+100
+            console.log('Estoy dentro del scope del for')
+        }
+
+        console.log(j)
+
+        
+        console.log("---------- " )
+         
+        paises = ['Argentina', 'Chile','Usuguay','Brasil']    
+        for (pais of paises) {
+            console.log(pais)
+        }
+
+        console.log("---------- " )
+
+        var auto = {
+            marca: 'Ford',
+            modelo: 'Fiesta',
+            year: 2014
+        }
+
+        for (attr in auto) {
+            console.log(attr + ' ---> ' + auto[attr])
+        }
+
+        console.log("---------- " )
+
+        function suma1(n1,n2) {
+            let rta = n1 + n2
+            return rta
+        }
+
+        console.log('suma1: ' + suma1(3,2))
+
+  
+        suma2 = function (n1, n2) {
+            let rta = n1 + n2
+            return rta
+        }
+
+        console.log('suma2: ' + suma2(3,2))
+
+        suma3 = (n1, n2) => {
+            let rta = n1 + n2
+            return rta
+        }
+
+        console.log('suma3: ' + suma3(3,2))
+
+
+        let suma4 = (a,b) => a + b
+        
+        console.log('suma4: ' + suma4(3,2))
+
+        let dinero = prompt('Ingrese su cuota')
+        
+        alert('la Suma4 de cuotas dio: ' + suma4(10, parseInt(dinero)))
+
+    </script>
+    
+</body>
+</html>
