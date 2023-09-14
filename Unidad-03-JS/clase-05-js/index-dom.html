@@ -10,7 +10,7 @@
         <div id="parrafo1">Hola a Tod@s!</div>
     </div>
 
-    <ul>
+    <ul id="paises">
         <li class="pais">AR</li>
         <li class="pais">UR</li>
         <li class="pais">CL</li>
@@ -20,6 +20,14 @@
         <div>CONTENEDOR 2</div>
     </div>
 
+    
+    <br>    
+    <br>
+
+    <form action="#">
+        <input type="text" id="nombre">
+        <input type="number" id="edad">
+    </form>
 
     <br>    
     <br>
@@ -29,7 +37,10 @@
     <button onclick="diapo42()">diapo 42</button>
     <button onclick="diapo43()">diapo 43</button>
     <button onclick="diapo44()">diapo 44</button>
-    <button onclick="diapo44_AddParaguay()">add Paraguay</button>
+    <button onclick="diapo44_AddParaguay()">add Paraguay v1</button>
+    <button id="btnParaguay">add Paraguay v2</button>
+    <button onclick="diapo47()">diapo 47</button>
+    <button onclick="diapo48()">diapo 48</button>
 
     <script>
         diapo38 = () => {
@@ -85,8 +96,28 @@
             let nuevoLI = document.createElement('li')   
             nuevoLI.innerHTML = 'PAR'
             
-            let myApp = document.getElementsByTagName('ul')[0]   
+            let myApp = document.getElementById("paises")
             myApp.appendChild(nuevoLI)
+        }
+
+        botoParaguay = document.getElementById('btnParaguay')
+        botoParaguay.onclick = () => {
+            let nuevoLI = document.createElement('li')   
+            nuevoLI.innerHTML = 'PAR'
+            
+            let myApp = document.getElementById("paises")
+            myApp.appendChild(nuevoLI)
+        }
+
+
+        diapo47 = () => {
+            let parrafo  = document.getElementById('parrafo1')
+            parrafo.parentNode.removeChild(parrafo)
+        }
+
+        diapo48 = () => {
+            document.getElementById('nombre').value = 'JORGE'
+            document.getElementById('edad').value = 39
         }
     </script>
 </body>
