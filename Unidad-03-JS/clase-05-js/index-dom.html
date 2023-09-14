@@ -28,6 +28,8 @@
     <button onclick="diapo41()">diapo 41</button>
     <button onclick="diapo42()">diapo 42</button>
     <button onclick="diapo43()">diapo 43</button>
+    <button onclick="diapo44()">diapo 44</button>
+    <button onclick="diapo44_AddParaguay()">add Paraguay</button>
 
     <script>
         diapo38 = () => {
@@ -68,6 +70,23 @@
             let nuevoParrafo = document.createElement('p')   
             nuevoParrafo.innerHTML = '<h2>Estoy apareciendo en forma dinamica!</h2>'
             document.body.appendChild(nuevoParrafo)
+        }
+
+        
+        diapo44 = () => {
+            let nuevoParrafo = document.createElement('p')   
+            nuevoParrafo.innerHTML = '<h2>Estoy apareciendo en forma dinamica!</h2>'
+            
+            let myApp = document.getElementById('app')   
+            myApp.appendChild(nuevoParrafo)
+        }
+
+        diapo44_AddParaguay = () => {
+            let nuevoLI = document.createElement('li')   
+            nuevoLI.innerHTML = 'PAR'
+            
+            let myApp = document.getElementsByTagName('ul')[0]   
+            myApp.appendChild(nuevoLI)
         }
     </script>
 </body>
