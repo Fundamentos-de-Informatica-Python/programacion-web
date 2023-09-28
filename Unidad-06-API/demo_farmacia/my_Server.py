@@ -89,6 +89,21 @@ def productoDelete(nombre):
     return jsonify({'productos': productos, 'status': 'ok'})
 
 
+#
+# Ejemplo con Query String
+# http://127.0.0.1:5000/prodxquery?nombre=tensiometro   
+#
+@app.route('/prodxquery', methods=['GET'])
+def productosGetQueryParam():
+        
+    nombre = request.args['nombre']
+    
+    for indice, p in enumerate(productos):
+        print('p: ', p)
+        print('nombre:', nombre)
+        if p['Nombre'] == nombre:
+            return jsonify({'productos':productos[indice], 'status':'ok' })
+    return 'error'
 
 
 
