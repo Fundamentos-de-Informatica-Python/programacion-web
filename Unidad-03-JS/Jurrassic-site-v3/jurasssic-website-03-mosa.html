@@ -6,6 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jurassic Class</title>
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="javascript/utils.js"></script>
+    <script>
+        function luna() {
+            hide('mossa');  
+            show('luna');  
+        }
+        function mossa() {
+            hide('luna'); 
+            show('mossa');  
+        }
+    </script>
 </head>
 <body>
     
@@ -22,14 +33,39 @@
         <a href="jurasssic-website-04-argsaurio.html">ArgSaurios</a>
         <a href="jurasssic-website-05-0800Dino.html">0-800-Dinos</a>
     </nav>
+
+    <button onclick="mossa()">Mossa</button> 
+    <button onclick="luna()">Luna</button> 
+
+
+<br>
+
+
+<table valing="centrar" border="1" width="80%">
+    <tr>
+        <td>
+            <section id="luna">
+                <video width="320" height="240" controls>
+                    <source src="video/luna-y-mossasaurio.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </section>
+        </td>
+        <td>
+            <section id="mossa">
+                <h1>Mossasaurio</h1>
+                <small> Mosa mata TRex !</small>
+                <img src="imagenes/dino_04_mosasaurio.png" id="mosasaurio" class="centrar mivuelta">        
+            </section>
+        </td>
+    </tr>
+</table>
+
+
+
         
 
-    <section>
-        <h1>Mossasaurio</h1>
-        <small> Mosa mata TRex !</small>
-        <img src="imagenes/dino_04_mosasaurio.png" id="mosasaurio" class="centrar mivuelta">
-    </section>
-        
+
     <style>
         .centrar {
             margin: 90px auto;
@@ -57,5 +93,10 @@
         }
     </style>
     
+
+    <script>
+        hide('luna'); 
+        hide('mossa'); 
+    </script>
 </body>
 </html>
