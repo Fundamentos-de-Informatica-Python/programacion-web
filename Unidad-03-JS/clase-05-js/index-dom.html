@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div id="parrafo1">Hola a Tod@s!</div>
+    </div>
+
+    <ul id="paises">
+        <li class="pais">AR</li>
+        <li class="pais">UR</li>
+        <li class="pais">CL</li>
+    </ul>
+    <div>
+        <div>CONTENEDOR 1</div>
+        <div>CONTENEDOR 2</div>
+    </div>
+
+    
+    <br>    
+    <br>
+
+    <form action="#">
+        <input type="text" id="nombre">
+        <input type="number" id="edad">
+    </form>
+
+    <br>    
+    <br>
+    <button onclick="diapo38()">diapo 38</button>
+    <button onclick="diapo39()">diapo 39 y 40</button>
+    <button onclick="diapo41()">diapo 41</button>
+    <button onclick="diapo42()">diapo 42</button>
+    <button onclick="diapo43()">diapo 43</button>
+    <button onclick="diapo44()">diapo 44</button>
+    <button onclick="diapo44_AddParaguay()">add Paraguay v1</button>
+    <button id="btnParaguay">add Paraguay v2</button>
+    <button onclick="diapo47()">diapo 47</button>
+    <button onclick="diapo48()">diapo 48</button>
+
+    <script>
+        diapo38 = () => {
+            let div     = document.getElementsByTagName('app')
+            let parrafo = document.getElementsByTagName('parrafo1')
+            
+            console.log("Contenido div: ", div.innerHTML)
+            console.log("Contenido parrafo: ", parrafo.innerHTML)
+        } 
+
+        diapo39 = () => {
+            let paises = document.getElementsByClassName('pais')
+
+            console.log('Pais 1', paises[0].innerHTML)
+            console.log('Pais 2', paises[1].innerHTML)
+            console.log('Pais 3', paises[2].innerHTML)
+
+            for (p of paises) {  
+                console.log(p) 
+            }             
+        }
+        
+        diapo41 = () => {
+            let contenedores = document.getElementsByTagName('div')
+            
+            console.log(contenedores)
+            for (c of contenedores) {  
+                console.log('Contenedor: ', c.innerHTML) 
+            }             
+        }
+
+        diapo42 = () => {
+            let parrafo = document.getElementById('parrafo1')   
+            parrafo.innerHTML = 'Hola a todos y todas!'          
+        }
+
+        diapo43 = () => {
+            let nuevoParrafo = document.createElement('p')   
+            nuevoParrafo.innerHTML = '<h2>Estoy apareciendo en forma dinamica!</h2>'
+            document.body.appendChild(nuevoParrafo)
+        }
+
+        
+        diapo44 = () => {
+            let nuevoParrafo = document.createElement('p')   
+            nuevoParrafo.innerHTML = '<h2>Estoy apareciendo en forma dinamica!</h2>'
+            
+            let myApp = document.getElementById('app')   
+            myApp.appendChild(nuevoParrafo)
+        }
+
+        diapo44_AddParaguay = () => {
+            let nuevoLI = document.createElement('li')   
+            nuevoLI.innerHTML = 'PAR'
+            
+            let myApp = document.getElementById("paises")
+            myApp.appendChild(nuevoLI)
+        }
+
+        botoParaguay = document.getElementById('btnParaguay')
+        botoParaguay.onclick = () => {
+            let nuevoLI = document.createElement('li')   
+            nuevoLI.innerHTML = 'PAR'
+            
+            let myApp = document.getElementById("paises")
+            myApp.appendChild(nuevoLI)
+        }
+
+
+        diapo47 = () => {
+            let parrafo  = document.getElementById('parrafo1')
+            parrafo.parentNode.removeChild(parrafo)
+        }
+
+        diapo48 = () => {
+            document.getElementById('nombre').value = 'JORGE'
+            document.getElementById('edad').value = 39
+        }
+    </script>
+</body>
+</html>
