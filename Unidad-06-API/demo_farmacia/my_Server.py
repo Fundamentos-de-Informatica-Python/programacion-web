@@ -91,9 +91,9 @@ def productoDelete(nombre):
 
 #
 # Ejemplo con Query String
-# http://127.0.0.1:5000/prodxquery?nombre=tensiometro   
+# http://127.0.0.1:5000/prods?nombre=tensiometro   
 #
-@app.route('/prodxquery', methods=['GET'])
+@app.route('/prods', methods=['GET'])
 def productosGetQueryParam():
         
     nombre = request.args['nombre']
