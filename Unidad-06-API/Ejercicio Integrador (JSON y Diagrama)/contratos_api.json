@@ -1,0 +1,145 @@
+
+* Definición del JSON de respuesta por método HTTP *
+
+PATH: http://127.0.0.1:5000/api/v1/purchase-orders/
+=====
+
+POST - (crear)
+====
+
+Body request
+
+{
+	"order_date": "12/12/2021",
+	"state": "Ordenado",
+	"supplier": "BEAN",
+	"cuit_supplier": "123123",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "2"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "6"
+		}
+	],
+	"total": "322",
+	"deadline": "14/12/2021"
+}
+
+Body response
+
+{
+	"order_date": "12/12/2021",
+	"order_id": "000001",
+	"state": "Ordenado",
+	"supplier": "BEAN",
+	"cuit_supplier": "123123",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "2"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "6"
+		}
+	],
+	"total": "322",
+	"deadline": "14/12/2021"
+}
+
+GET - (obtener todo)
+===
+
+Body response
+
+[
+	{
+		"order_date": "12/12/2021",
+		"order_id": "000001",
+		"state": "Ordenado",
+		"supplier": "BEAN",
+		"cuit_supplier": "123123",
+		"items": [
+			{
+				"item": "Beans 1kg",
+				"quantity": "2"
+			},
+			{
+				"item": "Azucar 1kg",
+				"quantity": "6"
+			}
+		],
+		"total": "322",
+		"deadline": "14/12/2021"
+	}
+]
+
+PUT (/:order_id)
+===
+
+Body request
+
+{
+	"state": "Ordenado",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "1"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "4"
+		}
+	],
+	"total": "1000"
+}
+
+Body response
+
+{
+	"order_date": "12/12/2021",
+	"order_id": "000001",
+	"state": "Ordenado",
+	"supplier": "BEAN",
+	"cuit_supplier": "123123",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "1"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "4"
+		}
+	],
+	"total": "1000",
+	"deadline": "14/12/2021"
+}
+
+GET (/:order_id)
+===
+
+Body response
+
+{
+	"order_date": "12/12/2021",
+	"order_id": "000001",
+	"state": "Ordenado",
+	"supplier": "BEAN",
+	"cuit_supplier": "123123",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "2"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "6"
+		}
+	],
+	"total": "322",
+	"deadline": "14/12/2021"
+}

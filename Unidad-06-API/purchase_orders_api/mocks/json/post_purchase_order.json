@@ -1,0 +1,19 @@
+{
+	"order_date": "12/12/2021",
+	"order_id": "000001",
+	"state": "Ordenado",
+	"supplier": "BEAN",
+	"cuit_supplier": "123123",
+	"items": [
+		{
+			"item": "Beans 1kg",
+			"quantity": "2"
+		},
+		{
+			"item": "Azucar 1kg",
+			"quantity": "6"
+		}
+	],
+	"total": "322",
+	"deadline": "14/12/2021"
+}

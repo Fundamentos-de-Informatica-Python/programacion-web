@@ -1,0 +1,160 @@
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	background-image: url(../img/coffee-beans-background.jpg);
+	background-size: cover;
+	background-repeat: repeat;
+}
+header {
+	display: block;
+	margin: auto;
+	text-align: center;
+	background: #6f4e37;
+	color: whitesmoke;
+	border-bottom: 5px solid black;
+	border-top: 5px solid black;
+}
+#header-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	justify-content: space-around;
+}
+h1 {
+	font-size: 300%;
+	text-decoration: underline;
+}
+.button {
+  background-color: #006400;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.button-action {
+	font-size: 14px;
+	padding: 10px;
+	background-color: #0000CD;
+}
+.edit-button {
+	background-color: #0000CD;
+}
+.button-items-add {
+	font-size: 16px;
+	padding: 5px 10px;
+	background-color: #0000CD;
+}
+.button-items-delete {
+	font-size: 16px;
+	padding: 5px 10px;
+	background-color: #8B0000;
+}
+#purchase-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+#purchase-header {
+	margin: 10px;
+	text-align: center;
+}
+#div-table {
+	margin: 10px;
+	text-align: center;
+}
+#items-table {
+	table-layout: auto;
+	width: 350px;
+	overflow-wrap: break-word;
+	text-align: left;
+}
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  padding: 5px;
+  background-color: #997F56;
+
+}
+th {
+  background-color: black;
+  color: whitesmoke;
+}
+#purchase-table {
+	border: 10px solid black;
+	border-radius: 5px;
+}
+
+
+/*LOADER*/
+
+.loader {
+  border: 16px solid #6f4e37;
+  border-radius: 50%;
+  border-top: 16px solid black;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#new-po-form-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+#new-po-form {
+	text-align: right;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #997F56;
+	border: 10px solid black;
+}
+
+#items-container {
+	margin-top:  10px;
+	border: 2px dotted whitesmoke;
+	padding: 10px 0;
+	text-align: center;
+}
+
+#sucess-message {
+	color: darkgreen;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+

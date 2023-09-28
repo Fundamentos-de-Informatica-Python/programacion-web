@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Nueva Orden de Compra</title>
+	<link rel="icon" href="./img/favicon_coffee_bean.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="./css/purchase_orders.css">
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script type="text/javascript" src="./js/new_purchase_order.js"></script>
+</head>
+<body>
+
+	<header>
+		<div id=header-container>
+			<div>
+				<img src="./img/favicon_coffee_bean.png">
+			</div>
+			<div>
+				<h1>Tienda de Café Online</h1>
+				<p>El verdadero sabor a café</p>
+			</div>
+			<div>
+				<img src="./img/favicon_coffee_bean.png">
+			</div>
+		</div>
+	</header>
+
+	<div id="new-po-form-container">
+		<div id="new-po-form">
+			<fieldset>
+				<legend style="text-align: center;"><strong>Nueva Orden de Compra</strong></legend>
+				<br>
+				<div>
+					<label>Fecha Orden:</label>
+				  	<input id="order-date" type="date">
+				</div>
+				<br>
+			  	<div>
+			  		<label>Nro. de Orden:</label>
+				  	<input id="order-id" type="text" readonly="true" placeholder="">
+				</div>
+			  	<br>
+			  	<div>
+				  	<input name="state" type="radio" value="Ordenado" checked="checked"><label>Ordenado</label>
+				  	<input name="state" type="radio" value="Completado"><label>Completado</label>
+				  	<input name="state" type="radio" Value="Cancelado"><label>Cancelado</label>
+			  	</div>
+			  	<br>
+				<div>
+			  		<label>Proveedor:</label>
+				  	<input id="supplier" type="text">
+				</div>
+			  	
+			  	<br>
+				<div>
+			  		<label>CUIT:</label>
+				  	<input id="cuit-supplier" type="text">
+				</div>
+				
+				<br>
+				<div style="text-align: left;">
+			  		<label>Articulos:</label>
+			  		<input class="button button-items-add" type="button" name="add" value="+" onclick="addItemRow()">
+				  	<div id="items-container">
+				  		
+				  	</div>
+				</div>
+
+				<br>
+				<div>
+			  		<label>Total:</label>
+				  	<input id="total" type="text">
+				</div>
+
+				<br>
+				<div>
+			  		<label>Fecha Entrega:</label>
+				  	<input id="deadline" type="date">
+				</div>
+
+			  	<br>
+			  	<hr>
+			  	<div align="center">
+			  		<input class="create_button button" type="submit" value="Crear Orden" onclick="createPurchaseOrder()">
+			  		<br>
+			  		<br>
+			  		<a href="./index.html">Ordenes de Compra</a>
+			  	</div>
+			</fieldset>
+			<p id="sucess-message" hidden></p>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
