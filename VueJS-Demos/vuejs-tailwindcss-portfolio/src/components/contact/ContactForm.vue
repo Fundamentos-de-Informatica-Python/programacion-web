@@ -13,7 +13,7 @@ export default { components: { Button, FormInput, FormTextarea } };
 			<p
 				class="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8"
 			>
-				Contact Form
+				Dejame tu mensaje!!! Escribime!!
 			</p>
 			<form action="#" class="font-general-regular space-y-7">
 				<FormInput label="Full Name" inputIdentifier="name" />

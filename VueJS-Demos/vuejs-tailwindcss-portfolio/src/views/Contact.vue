@@ -13,7 +13,7 @@ export default {
 			contacts: [
 				{
 					id: 1,
-					name: 'Your Address, Your City, Your Country',
+					name: 'Lincon Avenied, Miami, USA',
 					icon: 'map-pin',
 				},
 				{
