@@ -12,3 +12,11 @@ npm run serve
 
 
 https://vuejsexamples.com/a-simple-portfolio-starter-theme-built-with-vue-js/
+
+
+
+1)
+Para instalar al NVM sobre windows
+
+https://github.com/coreybutler/nvm-windows
+
