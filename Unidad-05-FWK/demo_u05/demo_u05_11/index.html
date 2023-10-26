@@ -16,7 +16,9 @@
     <div id="app">
         {{ mostrarMensaje() }}
         <hr>
-        <input @keyup.enter="saludar()" type="text"  v-model="nombre">  </input>
+        <input @keyup.enter="saludar()"
+               @keyup.esc="escapar()"
+              type="text"  v-model="nombre">  </input>
         <hr>
         Saludar: {{ saludo }}
         <hr>

@@ -36,6 +36,9 @@ var appVue2 = new Vue({
         },
         saludar: function() {
             this.saludo = "¡¡¡Hola " + this.nombre + " !!!"
+        },
+        escapar: function() {
+            this.saludo = "¡¡¡Hola " + this.nombre + " !!!" + " .... hay que salir de aqui!! "
         }
     }
 })
