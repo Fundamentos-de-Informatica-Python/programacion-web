@@ -23,7 +23,7 @@ new Vue({
 
 
 Vue.component('ventana', {
-    template: '<h2>ventana</h2>'
+    template: '<h2><br>Estoy feliz porque es mi cumple ...<br></h2>'
 })
 new Vue({
     el: '#web-components4'
@@ -42,4 +42,14 @@ Vue.component('Puerta', {
 })
 new Vue({
     el: '#web-components6'
+})
+
+
+
+
+Vue.component('cumple-messi', {
+    template: '<br><img src="img/leomessi-con-torta-y-mate.jpg" width="30%"><br>Estoy feliz porque es mi cumple ...<br><input type="text" value="">'
+})
+new Vue({
+    el: '#web-components4'
 })
