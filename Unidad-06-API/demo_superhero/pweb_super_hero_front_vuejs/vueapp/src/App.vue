@@ -1,7 +1,6 @@
 <template>
 
-
-<br><br>
+<HeroHead/>
 
 <div id="main-container">
     <HeroElement 
@@ -11,16 +10,23 @@
     />
 </div>
 
+<HeroFooter/>
+
 </template>
 
 <script>
 import HeroElement from './components/HeroElement.vue'
+import HeroHead from './components/HeroHead.vue';
+import HeroFooter from './components/HeroFooter.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HeroElement
-  },
+    HeroElement,
+    HeroHead,
+    HeroFooter
+},
   data() {
     return {
       super_heros: [
