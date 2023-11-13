@@ -53,13 +53,13 @@
 			"response": []
 		},
 		{
-			"name": "api/super-hero",
+			"name": "api/super-hero (Linterna Verde)",
 			"request": {
 				"method": "POST",
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "   {\r\n        \"name\": \"Linterna Verde\",\r\n        \"skill\": \"galactico\",\r\n        \"origen\": \"Planeta Oa\"\r\n    }",
+					"raw": "   {\r\n        \"name\": \"Linterna Verde\",\r\n        \"skill\": \"galactico\",\r\n        \"origen\": \"Planeta Oa\",\r\n        \"image\": \"005_linternaverde.jpeg\"\r\n    }",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -85,7 +85,39 @@
 			"response": []
 		},
 		{
-			"name": "api/super-hero",
+			"name": "api/super-hero (Flash)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"name\": \"Flash\",\r\n        \"skill\": \"Velocidad\",\r\n        \"origen\": \"Tierra\",\r\n        \"image\": \"006_flash.jpeg\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/super-hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"super-hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/super-hero (Linterna Verde)",
 			"request": {
 				"method": "PUT",
 				"header": [],

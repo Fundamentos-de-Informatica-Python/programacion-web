@@ -6,16 +6,18 @@ from models.super_hero import SuperHero
 app = Flask(__name__)
 CORS(app)
 
-batman = SuperHero("Batman", "Conocimiento científico","Plane")
-superman = SuperHero("Superman", "Fuerza sobrehumana y capacidad para volar","krypton")
-aquaman = SuperHero("Aquaman", "Dominación psiónica de la vida marina","Atlantida")
-mujer_maravilla = SuperHero("Mujer Maravilla", "Superhumana y domino de armas", "Isla de Themyscira")
+batman = SuperHero("Batman", "Conocimiento científico","Humano","001_batman.jpeg")
+superman = SuperHero("Superman", "Fuerza sobrehumana y capacidad para volar","krypton","002_superman.jpeg")
+aquaman = SuperHero("Aquaman", "Dominación psiónica de la vida marina","Atlantida","003_aquaman.jpeg")
+mujer_maravilla = SuperHero("Mujer Maravilla", "Superhumana y domino de armas", "Isla de Themyscira","004_wonderwoman.jpeg")
+flash = SuperHero("Flash", "Velocidad", "Humano","006_flash.jpeg")
 
 super_heroes = [
     batman,
     superman,
     aquaman,
-    mujer_maravilla
+    mujer_maravilla,
+    flash
 ]
 
 
@@ -31,8 +33,9 @@ def post_super_heroes():
     name = body['name']
     skill = body['skill']
     origen = body['origen']
+    image = body['image']
 
-    hero = SuperHero(name, skill, origen)
+    hero = SuperHero(name, skill, origen, image)
     super_heroes.append(hero)
 
     return (hero.serialize())

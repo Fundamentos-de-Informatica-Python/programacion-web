@@ -36,6 +36,11 @@ function addElementDOM(superHero) {
 	superHeroSkill = document.createElement("p");
 	superHeroSkill.innerHTML = superHero["skill"];
 
+	
+	superHeroSkill = document.createElement("img");
+	superHeroSkill.src = "img/" + superHero["image"];
+	superHeroSkill.width = "400";
+
 	superHeroDiv.appendChild(superHeroName);
 	superHeroDiv.appendChild(superHeroSkill);
 
