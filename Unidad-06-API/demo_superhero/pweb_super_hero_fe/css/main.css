@@ -1,0 +1,28 @@
+
+body {
+	font-family: sans-serif;
+	background-color: yellowgreen;
+}
+
+#main-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-bottom: 5px solid red;
+}
+
+#main-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	color: #00008B;
+	text-decoration: underline;
+}
+
+p {
+	font-style: italic;
+	font-size: 14px;
+}
