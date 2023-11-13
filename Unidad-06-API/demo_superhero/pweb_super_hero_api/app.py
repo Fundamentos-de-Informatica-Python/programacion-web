@@ -6,11 +6,11 @@ from models.super_hero import SuperHero
 app = Flask(__name__)
 CORS(app)
 
-batman = SuperHero("Batman", "Conocimiento científico","Humano","001_batman.jpeg")
-superman = SuperHero("Superman", "Fuerza sobrehumana y capacidad para volar","krypton","002_superman.jpeg")
-aquaman = SuperHero("Aquaman", "Dominación psiónica de la vida marina","Atlantida","003_aquaman.jpeg")
-mujer_maravilla = SuperHero("Mujer Maravilla", "Superhumana y domino de armas", "Isla de Themyscira","004_wonderwoman.jpeg")
-flash = SuperHero("Flash", "Velocidad", "Humano","006_flash.jpeg")
+batman = SuperHero("Batman", "Conocimiento científico","Humano","001_batman.jpg")
+superman = SuperHero("Superman", "Fuerza sobrehumana y capacidad para volar","krypton","002_superman.jpg")
+aquaman = SuperHero("Aquaman", "Dominación psiónica de la vida marina","Atlantida","003_aquaman.jpg")
+mujer_maravilla = SuperHero("Mujer Maravilla", "Superhumana y domino de armas", "Isla de Themyscira","004_wonderwoman.jpg")
+flash = SuperHero("Flash", "Velocidad", "Humano","006_flash.jpg")
 
 super_heroes = [
     batman,

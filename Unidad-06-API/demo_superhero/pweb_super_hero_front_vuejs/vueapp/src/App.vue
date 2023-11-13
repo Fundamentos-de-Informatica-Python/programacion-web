@@ -1,15 +1,21 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeroElement 
+    name="aquaman"
+    skill="el skill"
+    image="002_superman.jpg"
+    origen="el origen"
+  
+  />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HeroElement from './components/HeroElement.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HeroElement
   }
 }
 </script>
