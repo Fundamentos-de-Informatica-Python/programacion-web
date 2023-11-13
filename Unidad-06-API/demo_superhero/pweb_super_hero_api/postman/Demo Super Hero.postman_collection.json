@@ -1,0 +1,120 @@
+{
+	"info": {
+		"_postman_id": "6949f9f1-747d-4bea-a54e-f6a4e21abae2",
+		"name": "Demo Super Hero",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8555941"
+	},
+	"item": [
+		{
+			"name": "api/super-hero",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/super-hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"super-hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/super-hero",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/super-hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"super-hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/super-hero",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"name\": \"Linterna Verde\",\r\n        \"skill\": \"galactico\",\r\n        \"origen\": \"Planeta Oa\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/super-hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"super-hero"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "api/super-hero",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n        \"name\": \"Linterna Verde\",\r\n        \"skill\": \"anillo de poder\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/api/super-hero",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"super-hero"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

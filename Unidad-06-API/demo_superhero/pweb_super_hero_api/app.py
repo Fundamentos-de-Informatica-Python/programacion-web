@@ -51,6 +51,15 @@ def put_super_heroes():
     return jsonify([hero.serialize() for hero in super_heroes])
 
 
+@app.route('/api/super-hero/<name>', methods=['DELETE'])
+def delete_super_heroes(name):
+    for indice, p in enumerate(super_heroes):
+        if p.name == name:
+            super_heroes[indice: indice+1] = []
+    return jsonify([hero.serialize() for hero in super_heroes])
+
+
+
 
 if __name__ == '__main__':
     app.run()
