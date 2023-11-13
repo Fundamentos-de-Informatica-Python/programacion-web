@@ -28,7 +28,8 @@ function renderSuperHeroes(superHeroes) {
 
 function addElementDOM(superHero) {
 
-	superHeroDiv = document.getElementById("main-container");
+	superHeroDiv = document.createElement("div");
+	superHeroDiv.id = "my-element"
 
 	superHeroName = document.createElement("h2");
 	superHeroName.innerHTML = superHero["name"];
@@ -37,11 +38,16 @@ function addElementDOM(superHero) {
 	superHeroSkill.innerHTML = superHero["skill"];
 
 	
-	superHeroSkill = document.createElement("img");
-	superHeroSkill.src = "img/" + superHero["image"];
-	superHeroSkill.width = "400";
+	superHeroImage = document.createElement("img");
+	superHeroImage.src = "img/" + superHero["image"];
+	superHeroImage.width = "300";
 
 	superHeroDiv.appendChild(superHeroName);
 	superHeroDiv.appendChild(superHeroSkill);
+	superHeroDiv.appendChild(superHeroImage);
+
+
+	superHeroContainer = document.getElementById("main-container");
+	superHeroContainer.appendChild(superHeroDiv);
 
 }
