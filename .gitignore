@@ -115,5 +115,6 @@ __pycache__/
 
 
 # Intelligent IDEA
+.idea/*
 .idea/
 .idea
