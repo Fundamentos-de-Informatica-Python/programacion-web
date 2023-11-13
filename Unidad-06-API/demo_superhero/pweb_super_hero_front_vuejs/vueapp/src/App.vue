@@ -1,12 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HeroElement 
-    name="aquaman"
-    skill="el skill"
-    image="002_superman.jpg"
-    origen="el origen"
-  
-  />
+
+
+<br><br>
+
+<div id="main-container">
+    <HeroElement 
+      v-for="hero in super_heros" 
+      :key="hero.name"
+      :hero="hero"
+    />
+</div>
+
 </template>
 
 <script>
@@ -16,8 +20,50 @@ export default {
   name: 'App',
   components: {
     HeroElement
+  },
+  data() {
+    return {
+      super_heros: [
+        { 
+          name: "Batman",      
+          skill: "Conocimiento científico",                   
+          origen: "Humano", 
+          image: "001_batman.jpg"
+        },
+        { 
+          name: "Superman",    
+          skill: "Fuerza sobrehumana y capacidad para volar", 
+          origen: "krypton", 
+          image: "002_superman.jpg"
+        },
+        { 
+          name: "Aquaman",     
+          skill: "Dominación psiónica de la vida marina",     
+          origen: "Atlantida", 
+          image: "003_aquaman.jpg"
+        },
+        { 
+          name: "Mujer Maravilla", 
+          skill: "Superhumana y domino de armas",         
+          origen: "Isla de Themyscira", 
+          image: "004_wonderwoman.jpg"
+        },
+        { 
+          name: "Flash",           
+          skill: "Velocidad",                             
+          origen: "Humano", 
+          image: "006_flash.jpg"
+        }
+      ],
+    }
+
   }
+
+
 }
+
+
+
 </script>
 
 <style>
@@ -28,5 +74,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+#main-container {
+	display: flex;
+	justify-content: left;
+	flex-direction: row; 
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
 }
 </style>
